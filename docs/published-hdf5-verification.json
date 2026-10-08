@@ -1,0 +1,9 @@
+{
+  "date": "2026-10-08",
+  "command": "python tools/download_data.py --dataset all --check-only (against original source dataset root)",
+  "verified_files": 1701,
+  "sample_files": 81,
+  "snapshot_files": 1620,
+  "result": "all SHA-256 and size checks passed",
+  "archive_verification": "Both uploaded ZIPs also matched GitHub server SHA-256 digests and byte sizes."
+}

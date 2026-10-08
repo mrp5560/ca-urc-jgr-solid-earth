@@ -1,8 +1,8 @@
 # Causal-SeisField and CA-URC
 
-> Publication upload in progress: use the completed v1.0.0 Release for data downloads. The main-branch full-data manifest is being populated and may be incomplete until that release is published.
+Research code, trained-model artifacts, numerical source data, and selected processed waveform data prepared for submission to *Journal of Geophysical Research: Solid Earth*.
 
-Research code, trained-model artifacts, processed-data access, and numerical source data prepared for submission to *Journal of Geophysical Research: Solid Earth*.
+**Release scope:** this is a results-recalculation and sample-inference package. It provides archived predictions/results, selected checkpoints, four spatial-case HDF5 files, an 81-event full-record convenience sample, and 1,620 snapshot sidecars. It does **not** contain the complete full-record training/label dataset.
 
 Repository: <https://github.com/mrp5560/ca-urc-jgr-solid-earth>
 
@@ -59,20 +59,27 @@ Four complete processed HDF5 examples are included:
 
 These examples do not replace the full training dataset.
 
-### Download the full archives
+### Published waveform samples and snapshot sidecars
 
-The full processed archive contains 3,239 event HDF5 files, approximately **16.97 GiB**. The prefix-input archive contains 1,620 files, approximately **229 MiB**. Both are distributed through [GitHub Releases](https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases), separately from ordinary Git history.
+The [v1.0.0 release](https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases/tag/v1.0.0) distributes two independent ZIP assets:
 
-Download all processed-data ZIP parts and the prefix-input archive, verify the published SHA256 checksums, and extract **each ZIP independently into the repository root**. Parts are separate ZIP archives, each at most 512 MiB; do not concatenate them. Internal paths restore:
+| Release asset | Content and scope |
+| --- | --- |
+| `ca-urc-full-record-sample-81-events.zip` | 81 full-record event HDF5 files, selected as the first event IDs in sorted order for convenient packaging. This is neither a random nor a representative training sample. |
+| `ca-urc-snapshot-1620-events.zip` | All 1,620 snapshot-input sidecars from the supplementary scenario: 1,603 ready events and 17 incomplete/excluded events retained for audit. These short input files do not contain the complete full-record target/label archive. |
+
+The four spatial-case files listed above are included in the repository separately. The study's complete full-record archive contains 3,239 events, approximately **16.97 GiB**; that full archive is **not uploaded in this release**. The full archive remains part of the original local study data. SCEDC acquisition and preprocessing scripts are supplied for independent reconstruction from source observations.
+
+Verify each downloaded asset's SHA256 and extract each ZIP independently into the repository root; do not concatenate them. Internal paths restore:
 
 ```text
 data/scedc/processed_full_v4/events/<event_id>.h5
 data/scedc/snapshot_available_t0_5s_k5/events/<event_id>.h5
 ```
 
-The release notes and download helper provide final asset names and verification instructions. Allow space for downloaded archives and extracted files. Table-based analyses below can run without all waveform files; retraining and waveform-based regeneration require them.
+Use the download commands below to obtain all *published* assets. `--dataset all` means these two assets, not the full 3,239-event archive. Archived-table analyses below run without downloading the full waveform archive. Full retraining, complete waveform-based lead-time regeneration, and full prefix preflight require additional full-record label files.
 
-The complete raw miniSEED and StationXML archive is not duplicated here. Source data are available from SCEDC and the contributing networks. Scripts `00`–`11` retain the acquisition/preprocessing path. Rebuilding prefix inputs from scratch requires raw records as well as the full processed archive; processed HDF5 alone cannot recover raw preprocessing inputs.
+The complete raw miniSEED and StationXML archive is also not duplicated here. Source observations are available from SCEDC and contributing networks, and scripts `00`–`11` retain the acquisition/preprocessing route. For a newly reconstructed full-label archive, regenerate matching prefix sidecars from raw inputs as needed: the published sidecars verify the exact original source-HDF5 SHA256. Do not disable that integrity check to pair a different label file with an archived sidecar.
 
 ## Recompute primary numerical analyses
 
@@ -95,6 +102,8 @@ Script `69` reuses the bootstrap implementation in `62_sequence_aware_paired_boo
 
 ## Training and full reproduction map
 
+This is a code/dependency map for the original full workflow, not a claim that the published sample is a complete training dataset. Full-waveform stages require the missing full-record data or independent reconstruction from source observations. The table-based analyses above are supported by the published package.
+
 Scripts dynamically import earlier scripts by filename: retain their names and root placement. Saved run arguments, threshold files, and selection JSON are the reference for completed experiments; defaults alone are not a complete historical run record.
 
 | Stage | Scripts | Inputs and dependencies |
@@ -114,7 +123,7 @@ Scripts dynamically import earlier scripts by filename: retain their names and r
 | Observation budget | `81` | `45`, `62`, `63`; master manifest before single-budget eligibility filtering |
 | Prefix preprocessing/training | `08_preprocess_snapshot_available_inputs.py`, `train_snapshot_experiment.py` | Raw inputs for preprocessing; sidecars, full labels, reviewed exclusions and locked targets for training |
 
-Example grouped correction-head rerun after installing all inputs:
+Archival recipe for a grouped correction-head rerun, **only after independently supplying all required full-record label files**. The 81-event sample and four cases are insufficient for this command:
 
 ```bash
 python 63_train_and_evaluate_cadrg_gate_ablations_A3_A5.py --manifest data/scedc/model_manifests/scenario_t0_5s_k5_linux.csv --h5-root data/scedc/processed_full_v4/events --base-checkpoint runs/final_strong_baselines_reuse_locked/cross_attention/best_model.pt --threshold-json runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json --full-cadrg-predictions runs/cross_attention_dual_risk_previous_grouped_benchmark/locked_dual_risk_predictions.csv --out-dir reproduced/cadrg_gate_ablation_A3_A5
@@ -126,7 +135,7 @@ This keeps the default full gate suite, including A4's original position and see
 
 The prefix experiment retains an explicitly reviewed **1,603-event common cohort** from the 1,620-event scenario after 17 exclusions. Its test contains **219 events / 43,800 rows**, distinct from the primary 224-event test. Exclusions are recorded in `prefix_qc_exclusions_17.csv`. Failed eligible stations must not be silently removed, replaced, or filled from full-record inputs.
 
-After extracting both HDF5 archives, run:
+The snapshot ZIP alone cannot satisfy the cohort preflight because most full-record label files are absent from this release. The following archival recipe requires **all matching full-record source/label HDF5 files** (or a fully reconstructed label-plus-sidecar pair), not just the published sample:
 
 ```bash
 python train_snapshot_experiment.py --stage audit --manifest data/scedc/model_manifests/scenario_t0_5s_k5_linux.csv --excluded-events-csv prefix_qc_exclusions_17.csv --group-column sequence_group --out-dir reproduced/prefix_common1603
@@ -134,7 +143,7 @@ python train_snapshot_experiment.py --stage audit --manifest data/scedc/model_ma
 
 Use identical cohort/settings/output-directory arguments for later `--stage base`, `--stage head`, and `--stage evaluate`. The expected-event count remains 1620 because it refers to the scenario before exclusions. Inspect audit failures; do not suppress mismatches or revise the cohort using test performance.
 
-Completed results are in `runs/snapshot_available_validation_common1603/`. Physical diagnostics use the saved prefix predictions plus original station metadata: `diagnose_physical_conditions.py` defaults to `--stage audit`; `--stage analyze` adds stratified statistics. Original source-bundle notes are in Chinese and describe their historical checks, not checks automatically repeated during publication preparation.
+Completed numerical results are in `runs/snapshot_available_validation_common1603/` and are available independently of full waveform downloads. Regenerating physical diagnostics still requires the original station metadata for all analyzed events: `diagnose_physical_conditions.py` defaults to `--stage audit`; `--stage analyze` adds stratified statistics. Original source-bundle notes are in Chinese and describe their historical checks, not checks automatically repeated during publication preparation.
 
 ## Figures and validation
 
@@ -149,7 +158,7 @@ Code uses the [MIT license](LICENSE). Author-created derived research data and n
 See [SCEDC citation guidance](https://scedc.caltech.edu/about/citation.html). Cite SCEDC [10.7909/C3WD3xH1](https://doi.org/10.7909/C3WD3xH1) and SCSN/CI [10.7914/SN/CI](https://doi.org/10.7914/SN/CI) where applicable; other networks require their own citations. A later DOI archive should identify the specific frozen release.
 
 
-## Download the complete processed datasets
+## Download the published data assets
 
 Install or clone this repository, then run from its root:
 
@@ -158,14 +167,15 @@ python tools/download_data.py --dataset all
 python tools/download_data.py --dataset all --check-only
 ```
 
-Use `--dataset full` for the 3,239 full-record HDF5 events or
-`--dataset snapshot` for the 1,620 snapshot HDF5 files. The total original HDF5
-size is 18,457,954,310 bytes (about 17.2 GiB); allow additional disk space for
-one downloaded ZIP during extraction. Downloads resume by verifying already
-extracted HDF5 files, and temporary ZIPs are removed after successful extraction.
-All 70 ZIPs are independent; do not concatenate them.
+Use `--dataset sample` for the 81-event full-record convenience sample or
+`--dataset snapshot` for the 1,620 snapshot sidecars. `all` downloads both
+published assets only. None of these choices downloads the unpublished full
+3,239-event training/label archive.
 
-The exact asset sizes and SHA-256 hashes are recorded in
+The helper verifies published SHA256 checksums and resumes by checking already
+extracted HDF5 files. Allow space for extracted files and the ZIP being processed.
+The two ZIPs are independent; do not concatenate them. Exact asset sizes,
+file lists, and hashes are recorded in
 [data/RELEASE_DATA_MANIFEST.json](data/RELEASE_DATA_MANIFEST.json).
-The complete reproducibility release is
-[v1.0.0](https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases/tag/v1.0.0).
+
+Release: [v1.0.0](https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases/tag/v1.0.0).

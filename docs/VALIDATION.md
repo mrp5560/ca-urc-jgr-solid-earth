@@ -31,3 +31,10 @@ Archived JSON files retain historical paths and hashes as provenance. Normalizin
 ## Scope
 
 These results verify the released code's existing synthetic tests and the listed numerical analyses against archived predictions. They do not claim a full training rerun, fresh raw-data download, full-archive waveform preprocessing, prefix preflight over every waveform file, or regeneration of every manuscript figure. Historical check reports inside original source bundles are separate provenance records.
+
+
+## Published data coverage
+
+The release supports numerical recalculation from archived predictions and sample inference. Published waveform coverage comprises an 81-event full-record convenience sample (first event IDs in sorted order), four separately supplied spatial cases, and 1,620 snapshot sidecars. The 81 events are not a random or representative training sample. Of the snapshot events, 1,603 are ready and 17 remain incomplete/excluded for audit.
+
+The complete 3,239-event, approximately 16.97 GiB full-record archive is not included in this release. Snapshot sidecars require their matching original full-record label files, so downloading every published asset still does not enable full training or whole-cohort prefix preflight. The 65-test and 18-table validation results above remain valid for the released numerical-analysis package; they do not certify coverage of the omitted waveform files. Acquisition/preprocessing code provides an independent reconstruction route from SCEDC source observations.

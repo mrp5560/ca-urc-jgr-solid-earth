@@ -1,0 +1,20 @@
+{
+  "release_tag": "v1.0.0",
+  "assets": [
+    {
+      "name": "ca-urc-full-record-sample-81-events.zip",
+      "size_bytes": 262376088,
+      "sha256": "282323d5d9a6cf9038851006df6a70c0a7dbcd644b2706cb4fe5f831a19eb47f",
+      "remote_state": "uploaded",
+      "download_url": "https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases/download/v1.0.0/ca-urc-full-record-sample-81-events.zip"
+    },
+    {
+      "name": "ca-urc-snapshot-1620-events.zip",
+      "size_bytes": 79992820,
+      "sha256": "5bd970a56b9fdda1f8fdcec96c85ced50b68dd77e32d6fde82bb66836ffbaf7e",
+      "remote_state": "uploaded",
+      "download_url": "https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases/download/v1.0.0/ca-urc-snapshot-1620-events.zip"
+    }
+  ],
+  "verification": "GitHub server SHA-256 and size matched local archives before publication."
+}

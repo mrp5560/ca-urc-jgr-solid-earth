@@ -103,7 +103,7 @@ def extract_verified(path, root, archive):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("--dataset", choices=["full", "snapshot", "all"], default="all")
+    parser.add_argument("--dataset", choices=["sample", "snapshot", "all"], default="all")
     parser.add_argument("--repo-root", type=Path, default=REPOSITORY, help="Destination root; preserves repository-relative paths.")
     parser.add_argument("--manifest", type=Path, default=REPOSITORY / "data/RELEASE_DATA_MANIFEST.json")
     parser.add_argument("--release-url", default=DEFAULT_RELEASE, help="Override only when using a mirror with the same checksums.")

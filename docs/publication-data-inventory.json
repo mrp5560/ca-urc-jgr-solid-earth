@@ -8,18 +8,6 @@
     "40865216",
     "40865192"
   ],
-  "release_data_not_copied": {
-    "full_processed": {
-      "source": "data/scedc/processed_full_v4/events",
-      "files": 3239,
-      "MiB": 17373.68
-    },
-    "snapshot_processed": {
-      "source": "data/scedc/snapshot_available_t0_5s_k5/events",
-      "files": 1620,
-      "MiB": 229.19
-    }
-  },
   "normalizations": [
     {
       "path": "data/model_manifests/all_events_with_scenario_flags.csv",
@@ -2086,7 +2074,7 @@
   ],
   "archived_json_provenance": "JSON protocol/audit paths and original hashes preserved verbatim; original paths record historical runtime and are not portable invocation examples.",
   "unresolved_inputs": [
-    "Complete processed HDF5 inputs must be extracted from separate Release assets before full retraining.",
+    "Complete retraining requires the missing full-record HDF5 inputs. They are not all contained in this release; obtain exact matching inputs independently or rebuild full records and matching snapshot sidecars with the provided pipelines.",
     "ETOPO raster used by Fig1 is outside workspace and not staged.",
     "Raw SCEDC waveforms/StationXML and event phase text files are not staged; original download scripts and phase-derived metadata included.",
     "Snapshot inputs include 17 incomplete events; declared common cohort has 1603 events with 219 test events."
@@ -7229,5 +7217,17 @@
       "path_columns_normalized": false
     }
   ],
-  "note": "Full processed HDF5 files are supplied separately as declared in the Release data manifest; this inventory covers curated repository data."
+  "note": "This inventory covers curated repository data. Release v1.0.0 supplies only an 81-event full-record sample and 1620 snapshot files. The complete 3239-event full-record collection is not bundled.",
+  "complete_source_collections": {
+    "full_processed": {
+      "source": "data/scedc/processed_full_v4/events",
+      "files": 3239,
+      "MiB": 17373.68
+    },
+    "snapshot_processed": {
+      "source": "data/scedc/snapshot_available_t0_5s_k5/events",
+      "files": 1620,
+      "MiB": 229.19
+    }
+  }
 }
