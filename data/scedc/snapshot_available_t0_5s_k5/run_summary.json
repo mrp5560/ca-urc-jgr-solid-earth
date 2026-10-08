@@ -1,0 +1,30 @@
+{
+  "audit_scope": "Only the configured eligible stations per event; no prediction-level audit included",
+  "incomplete_events": [
+    "10775573",
+    "10835317",
+    "10964949",
+    "15074636",
+    "11418410",
+    "37259016",
+    "37259944",
+    "37045495",
+    "37281064",
+    "37254543",
+    "37854536",
+    "38010488",
+    "37891767",
+    "38138415",
+    "38432527",
+    "39666952",
+    "39667304"
+  ],
+  "instructions": "Do not silently discard incomplete events or resample stations. Inspect QC; reconcile failures or declare a common eligible subset for all comparisons.",
+  "original_labels_modified": false,
+  "prefix_audit_variants_failed": 0,
+  "prefix_audit_variants_inconclusive": 0,
+  "prefix_audit_variants_passed": 6480,
+  "ready_events": 1603,
+  "requested_events": 1620,
+  "station_rows_removed_or_reordered": false
+}

@@ -1,0 +1,84 @@
+{
+  "final_model": "Causal-SeisField + CA-URC",
+  "formula": "y_CA-URC = y_CA + p_under^gamma * Delta",
+  "variant": "A4_under_only",
+  "selected_epoch": 3,
+  "selected_gamma": 5,
+  "case_selection": {
+    "representative_mag_target": 4.3,
+    "representative_mag_tolerance": 0.15,
+    "high_min_mag": 5.0,
+    "representative_event_id": "15201297",
+    "representative_repeat": 11,
+    "representative_magnitude": 4.3,
+    "high_event_id": "15200401",
+    "high_repeat": 2,
+    "high_magnitude": 5.4
+  },
+  "model_audit": {
+    "device": "cpu",
+    "variant": "A4_under_only",
+    "selected_epoch": 3,
+    "selected_gamma": 5.0,
+    "hidden_dim": 128,
+    "attention_heads": 4,
+    "risk_hidden": 64,
+    "maximum_correction": 1.5,
+    "base_checkpoint_variant": "cross_attention",
+    "head_checkpoint_variant": "A4_under_only"
+  },
+  "representative_reproduction": {
+    "max_abs_truth_diff": 4.76837158203125e-07,
+    "max_abs_base_diff": 0.000102996826171875,
+    "max_abs_final_diff": 0.0001084150721473165,
+    "max_query_set_dependence": 9.5367431640625e-07,
+    "random_seed": 919760930,
+    "input_indices": [
+      7,
+      1,
+      8,
+      4,
+      3
+    ],
+    "locked_target_indices": [
+      69,
+      0,
+      23,
+      50,
+      31,
+      20,
+      37,
+      43,
+      33,
+      39
+    ],
+    "h5_path": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events\\15201297.h5"
+  },
+  "high_motion_reproduction": {
+    "max_abs_truth_diff": 2.384185791015625e-07,
+    "max_abs_base_diff": 3.528594970658716e-05,
+    "max_abs_final_diff": 3.218759887291256e-05,
+    "max_query_set_dependence": 4.76837158203125e-07,
+    "random_seed": 4230314594,
+    "input_indices": [
+      2,
+      5,
+      4,
+      0,
+      6
+    ],
+    "locked_target_indices": [
+      14,
+      43,
+      88,
+      46,
+      26,
+      9,
+      38,
+      66,
+      10,
+      40
+    ],
+    "h5_path": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events\\15200401.h5"
+  }
+}

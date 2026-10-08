@@ -1,0 +1,21 @@
+﻿display_metric,quantity,quantity_label,population,population_label,mean_delta,ci95_low,ci95_high,significant,favors_power_gate,favors_base,probability_candidate_favorable,n_paired_events
+Delta MAE,pga,PGA,overall,Overall,0.0004097825421818,-0.0006595440546848,0.001595903971565,False,False,False,0.2275,224
+Delta MAE,pga,PGA,non_tail,Non-tail,0.0026984033222751,0.0015795568061856,0.0039232927623636,True,False,True,0.0,224
+Delta MAE,pga,PGA,triggered,Triggered,-0.0153702953195317,-0.0258965288384465,-0.0044772403930918,True,True,False,0.9975,154
+Delta MAE,pga,PGA,tail,High-motion tail,-0.0801181283931279,-0.0943652494718392,-0.0666069593122258,True,True,False,1.0,98
+Delta MAE,pga,PGA,m4plus,$M \geq 4$,-0.0056563250621159,-0.011567104187111,-0.0005348342667023,True,True,False,0.983,30
+Delta MAE,pgv,PGV,overall,Overall,0.0003587814154369,-0.0005355752008035,0.001310828379954,False,False,False,0.217,224
+Delta MAE,pgv,PGV,non_tail,Non-tail,0.0024174281877194,0.0012201493540099,0.0038644764682296,True,False,True,0.0,224
+Delta MAE,pgv,PGV,triggered,Triggered,-0.0133905801082622,-0.0212213184285122,-0.005824014617096,True,True,False,1.0,154
+Delta MAE,pgv,PGV,tail,High-motion tail,-0.0438144763005109,-0.0561492979809589,-0.0319359334007635,True,True,False,1.0,87
+Delta MAE,pgv,PGV,m4plus,$M \geq 4$,-0.0003590525388717,-0.0060592889130115,0.006104005733629,False,False,False,0.557,30
+Delta Under05 (percentage points),pga,PGA,overall,Overall,-0.33928571428570997,-0.46657366071427997,-0.23214285714285,True,True,False,1.0,224
+Delta Under05 (percentage points),pga,PGA,non_tail,Non-tail,-0.08236784297052001,-0.12422605761054,-0.04857191574546,True,True,False,1.0,224
+Delta Under05 (percentage points),pga,PGA,triggered,Triggered,-5.29679465556088,-7.2258733555405605,-3.6578474961186,True,True,False,1.0,154
+Delta Under05 (percentage points),pga,PGA,tail,High-motion tail,-14.44513547995335,-19.71018507843633,-9.48224305827936,True,True,False,1.0,98
+Delta Under05 (percentage points),pga,PGA,m4plus,$M \geq 4$,-1.35,-2.11666666666666,-0.7333333333333301,True,True,False,1.0,30
+Delta Under05 (percentage points),pgv,PGV,overall,Overall,-0.18973214285714,-0.28794642857142,-0.10714285714284999,True,True,False,1.0,224
+Delta Under05 (percentage points),pgv,PGV,non_tail,Non-tail,-0.040426587301580004,-0.07037605406746,-0.01555524553571,True,True,False,1.0,224
+Delta Under05 (percentage points),pgv,PGV,triggered,Triggered,-2.6486842882946697,-4.009514880862279,-1.43848737842244,True,True,False,1.0,154
+Delta Under05 (percentage points),pgv,PGV,tail,High-motion tail,-6.2749947113225994,-10.15290801145875,-3.1253497728996797,True,True,False,1.0,87
+Delta Under05 (percentage points),pgv,PGV,m4plus,$M \geq 4$,-1.0833333333333302,-1.6500000000000001,-0.6,True,True,False,1.0,30

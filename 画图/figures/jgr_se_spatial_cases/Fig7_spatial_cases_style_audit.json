@@ -1,0 +1,65 @@
+{
+  "annotation_layout": [
+    {
+      "case": "successful_correction",
+      "anchor": [
+        0.27834071759276696,
+        0.94
+      ],
+      "alignment": "left",
+      "overlap_score": 0.0
+    },
+    {
+      "case": "representative",
+      "anchor": [
+        0.08642582845243613,
+        0.4889098846708066
+      ],
+      "alignment": "left",
+      "overlap_score": 0.0
+    },
+    {
+      "case": "residual_failure",
+      "anchor": [
+        0.45768102593451826,
+        0.575702260902289
+      ],
+      "alignment": "left",
+      "overlap_score": 0.0
+    }
+  ],
+  "residual_color_limit": 1.5,
+  "residual_values_below_scale": 42,
+  "residual_values_above_scale": 1,
+  "map_metrics_scope": "all expanded non-input stations displayed in each case",
+  "main_layout": {
+    "canvas_mm": [
+      183.0,
+      246.0
+    ],
+    "map_axis_mm": [
+      29.5,
+      29.5
+    ],
+    "column_width_mm": 35.625,
+    "column_gap_mm": 4.5
+  },
+  "demo": false,
+  "canvas_width_mm": 183.0,
+  "canvas_height_mm": 246.0,
+  "font_settings_pt": {
+    "body": 8.2,
+    "axis": 8.2,
+    "tick": 7.8,
+    "title": 8.1,
+    "header": 8.7,
+    "annotation": 7.8,
+    "metric": 7.7,
+    "legend": 7.8,
+    "panel": 10.5
+  },
+  "minimum_text_artist_font_pt": 7.7,
+  "text_outside_canvas": [],
+  "export_dpi": 600,
+  "bbox_inches": null
+}

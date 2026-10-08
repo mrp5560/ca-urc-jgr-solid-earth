@@ -1,0 +1,13 @@
+{
+  "current_rows": 43800,
+  "reference_rows_same_test_cohort": 43800,
+  "test_events": 219,
+  "exact_key_pairing": true,
+  "max_abs_truth_difference": 4.768371590913034e-07,
+  "tail_flags_match": {
+    "pga": true,
+    "pgv": true
+  },
+  "reference_rows_reordered_by_keys": true,
+  "input_indices_verified_against_archive": "not stored in this reference; canonical seed plus exact target draw are checked"
+}

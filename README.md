@@ -1,5 +1,7 @@
 # Causal-SeisField and CA-URC
 
+> Publication upload in progress: use the completed v1.0.0 Release for data downloads. The main-branch full-data manifest is being populated and may be incomplete until that release is published.
+
 Research code, trained-model artifacts, processed-data access, and numerical source data prepared for submission to *Journal of Geophysical Research: Solid Earth*.
 
 Repository: <https://github.com/mrp5560/ca-urc-jgr-solid-earth>
@@ -44,7 +46,7 @@ Activate `.venv` using your operating system's activation command before install
 | `画图/` | Figure scripts and supporting tables, including historical layout variants |
 | `Causal_SeisField_*`, `SeisField_physical_diagnostics/` | Original source bundles and run/check notes |
 
-CSV HDF5 paths are normalized to repository-relative paths. Numerical values, event identities, and locked draws are preserved. Archived JSON protocols may retain original machine paths and hashes as provenance. A moved checkout can produce a new protocol ID; fresh experiments should use new output directories.
+CSV HDF5 paths are normalized to repository-relative paths. Numerical values, event identities, and locked draws are preserved. Archived JSON protocols may retain original machine paths and hashes as provenance. The prefix protocol ID uses source-code hashes, input-content hashes, cohort order, and scientific settings rather than directory names. Moving unchanged files does not by itself invalidate that protocol. Preserve exact source/data bytes and use new output directories for fresh experiments.
 
 Four complete processed HDF5 examples are included:
 
@@ -138,10 +140,32 @@ Completed results are in `runs/snapshot_available_validation_common1603/`. Physi
 
 Explicit JGR figure scripts are `Fig1_JGR_SE_dataset_distribution.py` and `画图/Fig7_JGR_SE_spatial_case_studies_layout_refined.py`. Other filenames retain `NC` from earlier layouts; this does not imply publication there. Machine-specific argument defaults were made portable in copied sources; see `docs/portable-defaults.json`. Model, loss, selection, and metric logic was not changed by this cleanup. Figure 1 accepts `--relief-raster none` for a flat fallback or an explicit relief GeoTIFF. A fresh Cartopy installation may need basemap downloads.
 
-All 163 copied Python sources passed syntax parsing with Python 3.11.5. Synthetic test modules for prefix preprocessing/training and diagnostics are included. Source parsing and historical synthetic tests do not establish that full training or every figure was reproduced on the release machine. Consult current release validation records for checks actually performed.
+All 163 copied Python sources passed syntax parsing with Python 3.11.5. The three existing test modules passed all 65 tests. Scripts 69, 70, and 78 were rerun from the staged files; all 18 generated CSV tables matched their archived counterparts at absolute and relative tolerance 1e-12, using the full default 10,000 bootstrap repetitions where applicable. These checks do not constitute full model retraining or reproduction of every figure. See [current validation results](docs/VALIDATION.md).
 
 ## Citation and licenses
 
 Code uses the [MIT license](LICENSE). Author-created derived research data and numerical outputs use [CC BY 4.0](DATA_LICENSE.md), with the stated third-party exclusions. Cite the repository version, associated manuscript when available, and original data providers. `CITATION.cff` uses the verified repository account, not an inferred manuscript author list. No publication or archive DOI is invented.
 
 See [SCEDC citation guidance](https://scedc.caltech.edu/about/citation.html). Cite SCEDC [10.7909/C3WD3xH1](https://doi.org/10.7909/C3WD3xH1) and SCSN/CI [10.7914/SN/CI](https://doi.org/10.7914/SN/CI) where applicable; other networks require their own citations. A later DOI archive should identify the specific frozen release.
+
+
+## Download the complete processed datasets
+
+Install or clone this repository, then run from its root:
+
+```bash
+python tools/download_data.py --dataset all
+python tools/download_data.py --dataset all --check-only
+```
+
+Use `--dataset full` for the 3,239 full-record HDF5 events or
+`--dataset snapshot` for the 1,620 snapshot HDF5 files. The total original HDF5
+size is 18,457,954,310 bytes (about 17.2 GiB); allow additional disk space for
+one downloaded ZIP during extraction. Downloads resume by verifying already
+extracted HDF5 files, and temporary ZIPs are removed after successful extraction.
+All 70 ZIPs are independent; do not concatenate them.
+
+The exact asset sizes and SHA-256 hashes are recorded in
+[data/RELEASE_DATA_MANIFEST.json](data/RELEASE_DATA_MANIFEST.json).
+The complete reproducibility release is
+[v1.0.0](https://github.com/mrp5560/ca-urc-jgr-solid-earth/releases/tag/v1.0.0).

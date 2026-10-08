@@ -1,0 +1,3 @@
+group,n_events,mag_min,mag_median,mag_mean,mag_max,year_min,year_max
+preprocessed,3239,3.0,3.3,3.382185859833282,7.1,2010,2024
+model_ready_t0_5s_k5,1620,3.0,3.3,3.4081481481481486,7.1,2010,2024

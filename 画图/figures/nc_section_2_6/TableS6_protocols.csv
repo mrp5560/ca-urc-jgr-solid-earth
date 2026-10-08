@@ -1,0 +1,5 @@
+scenario,evaluation,n_total_events,n_prediction_rows,model_policy,threshold_policy,bootstrap_unit
+grouped,Sequence-grouped held-out events,224,44800,"Original grouped base and A4 lock; head epoch 3, gamma 5",Grouped training-derived thresholds,hierarchical_sequence_event
+chronological,2021–2024 events; train 2010–2018; validation non-Ridgecrest 2019 + 2020,192,38400,"Separately trained temporal base epoch 49 and head epoch 19, gamma 5",Temporal training-derived thresholds,event
+unseen_station,"Unseen target role after P-state/distance matching, 20-km caliper",195,5649,Separately trained station-OOD model; unseen stations excluded from train/validation,Station-OOD seen-only training targets,event
+ridgecrest,"Retrospective single-held-out-sequence transfer, 2019 Ridgecrest",593,118600,Unchanged chronological base/head/gamma; no Ridgecrest re-selection,Unchanged temporal training-derived thresholds,event_within_single_heldout_sequence

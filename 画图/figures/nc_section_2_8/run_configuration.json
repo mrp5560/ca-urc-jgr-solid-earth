@@ -1,0 +1,19 @@
+{
+  "demo": false,
+  "locked_model": {
+    "variant": "A4_under_only",
+    "epoch": 3,
+    "gamma": 5.0
+  },
+  "inputs": {
+    "gamma_scan": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\cadrg_gate_ablation_A3_A5\\A4_under_only\\epoch_gamma_validation_scan.csv",
+    "lead_bin_table": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\figures\\nc_section_2_5\\TableS5_metrics_by_peak_lead.csv",
+    "matching_balance": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_station_ood_matched_geometry\\matching_balance_summary.csv",
+    "matching_bootstrap": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_station_ood_matched_geometry\\matched_geometry_event_bootstrap.csv",
+    "sequence_bootstrap": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_sequence_aware_bootstrap\\all_sequence_aware_bootstrap_summary.csv"
+  },
+  "output_directory": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\figures\\nc_section_2_8",
+  "model_training_performed": false,
+  "model_selection_performed": false,
+  "figure_is_for_manuscript": true
+}

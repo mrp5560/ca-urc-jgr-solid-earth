@@ -1,0 +1,13 @@
+t0_sec,input_stations,budget,split,n_eligible_events,n_sequence_groups
+3,3,t0_3s_k3,train,1392,346
+3,3,t0_3s_k3,validation,254,19
+3,3,t0_3s_k3,test,366,24
+5,5,t0_5s_k5,train,1189,331
+5,5,t0_5s_k5,validation,207,20
+5,5,t0_5s_k5,test,224,22
+10,5,t0_10s_k5,train,1758,463
+10,5,t0_10s_k5,validation,342,23
+10,5,t0_10s_k5,test,424,27
+10,10,t0_10s_k10,train,947,339
+10,10,t0_10s_k10,validation,121,13
+10,10,t0_10s_k10,test,158,13

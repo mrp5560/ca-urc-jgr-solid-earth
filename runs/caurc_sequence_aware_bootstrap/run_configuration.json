@@ -1,0 +1,51 @@
+{
+  "bootstrap_module": "62_sequence_aware_paired_bootstrap_cadrg.py",
+  "ablation_predictions": "runs/cadrg_gate_ablation_A3_A5/locked_test_ablation_predictions.csv",
+  "baseline_predictions": "runs/final_strong_baselines_reuse_locked/final_strong_baseline_reused_locked_predictions.csv",
+  "manifest": "data/model_manifests/scenario_t0_5s_k5_linux.csv",
+  "split_column": "split_grouped",
+  "test_label": "test",
+  "sequence_column": "sequence_group",
+  "comparisons": "ca_urc:cross_attention,ca_urc:graph,ca_urc:tail_weighted_attention,ca_urc:old_power_gate,ca_urc:ca_drg",
+  "bootstrap_repetitions": 10000,
+  "confidence_level": 0.95,
+  "seed": 20260713,
+  "save_distributions": false,
+  "out_dir": "runs/caurc_sequence_aware_bootstrap",
+  "final_model_name": "CA-URC",
+  "final_model_formula": "y_CA + p_under^gamma * Delta",
+  "grouped_validation_lock": {
+    "variant": "A4_under_only",
+    "epoch": 3,
+    "gamma": 5.0
+  },
+  "comparisons_parsed": [
+    {
+      "candidate": "ca_urc",
+      "reference": "cross_attention"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "graph"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "tail_weighted_attention"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "old_power_gate"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "ca_drg"
+    }
+  ],
+  "main_inference": "hierarchical_sequence_event",
+  "sensitivity_inference": "sequence_cluster",
+  "metric_hierarchy": "targets -> repeats -> events -> sequence-aware bootstrap",
+  "delta_definition": "CA-URC - reference",
+  "repeats_treated_as_independent_events": false,
+  "model_training_performed": false,
+  "model_selection_performed": false
+}

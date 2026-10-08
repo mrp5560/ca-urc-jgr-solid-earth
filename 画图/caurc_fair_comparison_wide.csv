@@ -1,0 +1,8 @@
+Method,Type,PGA overall MAE,PGA tail MAE,PGA tail U0.5 (%),PGV overall MAE,PGV tail MAE,PGV tail U0.5 (%),PGA tail penalty,PGV tail penalty
+Nearest observed,Causal propagation,0.606,0.957,69.78,0.507,1.07,72.45,0.351,0.5630000000000001
+IDW observed,Causal propagation,0.819,0.698,54.56,0.605,0.806,58.89,-0.121,0.20100000000000007
+PLUM-like,Causal propagation,0.528,0.875,66.75,0.534,0.813,55.62,0.347,0.2789999999999999
+Graph,Learned causal,0.31,0.615,62.13,0.262,0.759,76.59,0.305,0.497
+Tail-weighted Attention,Learned causal,0.34,0.612,60.51,0.286,0.741,70.06,0.27199999999999996,0.455
+Cross-Attention Base,Learned causal,0.306,0.639,64.0,0.266,0.747,71.46,0.333,0.481
+CA-URC,Proposed,0.306,0.567,53.8,0.263,0.648,60.35,0.26099999999999995,0.385

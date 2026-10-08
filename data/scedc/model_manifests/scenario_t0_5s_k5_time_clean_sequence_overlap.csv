@@ -1,0 +1,7 @@
+split_a,split_b,n_overlapping_sequence_groups
+train,validation,0
+train,test,0
+train,ridgecrest_ood,0
+validation,test,0
+validation,ridgecrest_ood,0
+test,ridgecrest_ood,0

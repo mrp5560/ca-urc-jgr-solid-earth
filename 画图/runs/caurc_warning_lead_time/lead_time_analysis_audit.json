@@ -1,0 +1,32 @@
+{
+  "prediction_rows": 44800,
+  "events": 224,
+  "unique_event_station_pairs": 14065,
+  "lead_time_rows": 14065,
+  "merged_rows": 44800,
+  "max_abs_truth_diff_pga": 6.40420124042862e-07,
+  "max_abs_truth_diff_pgv": 6.581852476372774e-07,
+  "truth_tolerance": 1e-05,
+  "final_model_name": "CA-URC",
+  "final_model_internal_variant": "A4_under_only",
+  "grouped_validation_selected_epoch": 3,
+  "grouped_validation_selected_gamma": 5.0,
+  "lead_bin_edges_sec": [
+    0.0,
+    1.0,
+    2.0,
+    5.0,
+    10.0,
+    20.0
+  ],
+  "latency_sensitivity_sec": [
+    0.0,
+    0.5,
+    1.0,
+    2.0
+  ],
+  "metric_aggregation": "targets -> repeats -> events",
+  "model_training_performed": false,
+  "model_selection_performed": false,
+  "physical_lead_times_reused": true
+}

@@ -1,0 +1,22 @@
+{
+  "distance_internal_edges_km": [
+    94.87298583984375,
+    139.93450927734375
+  ],
+  "labels": [
+    "Near",
+    "Middle",
+    "Far"
+  ],
+  "intervals": [
+    "[0,q1)",
+    "[q1,q2)",
+    "[q2,+inf)"
+  ],
+  "fit_population": "retained TRAIN events only; no predictions or amplitudes read",
+  "train_events": 1177,
+  "train_target_draws": 35310,
+  "repeats_per_event": 3,
+  "draw_protocol": "source63 SHA256(train:event_id:repeat:r:seed); input then target draw",
+  "weighting": "equal events/repeats/targets; K,Q and repeats fixed across events"
+}

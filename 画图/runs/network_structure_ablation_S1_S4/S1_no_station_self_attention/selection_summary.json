@@ -1,0 +1,11 @@
+{
+  "variant": "S1_no_station_self_attention",
+  "best_epoch": 49,
+  "best_validation_score": 0.29976061144408783,
+  "validation_mae_pga": 0.3118493649214747,
+  "validation_mae_pgv": 0.28767185796670103,
+  "parameter_count": 239874,
+  "training_seconds": 8098.167791604996,
+  "test_accessed_during_selection": false,
+  "checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/network_structure_ablation_S1_S4/S1_no_station_self_attention/best_model.pt"
+}

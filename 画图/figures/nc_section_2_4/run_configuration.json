@@ -1,0 +1,34 @@
+{
+  "learned_metrics": "runs/final_strong_baselines_reuse_locked/final_strong_baseline_metrics.csv",
+  "propagation_metrics": "runs/final_propagation_metrics_caurc_protocol/final_propagation_canonical_metrics.csv",
+  "learned_bootstrap": "runs/caurc_sequence_aware_bootstrap/hierarchical_bootstrap_summary.csv",
+  "propagation_bootstrap": "runs/final_propagation_metrics_caurc_protocol/caurc_vs_propagation_hierarchical_bootstrap.csv",
+  "out_dir": "figures/nc_section_2_4",
+  "dpi": 600,
+  "demo": false,
+  "skip_locked_audit": false,
+  "figure_protocol": "locked sequence-grouped",
+  "metric_hierarchy": "targets -> repeats -> events",
+  "uncertainty": "hierarchical sequence -> event bootstrap",
+  "tail_definition_source": "training-derived, locked target-level labels",
+  "figure_methods": [
+    "nearest_observed",
+    "idw_observed",
+    "plum_like",
+    "graph",
+    "tail_weighted_attention",
+    "cross_attention",
+    "ca_urc"
+  ],
+  "table_methods": [
+    "median_observed",
+    "nearest_observed",
+    "idw_observed",
+    "plum_like",
+    "graph",
+    "tail_weighted_attention",
+    "cross_attention",
+    "ca_urc",
+    "source_oracle_ridge"
+  ]
+}

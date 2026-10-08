@@ -1,0 +1,31 @@
+{
+  "model": "CA-URC",
+  "variant": "A4_under_only",
+  "formula": "y_CA + p_under^gamma * Delta",
+  "base_checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/caurc_chronological_2021_2024/cross_attention_base/best_model.pt",
+  "head_checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/caurc_chronological_2021_2024/ca_urc_head/selected_ca_urc_head.pt",
+  "selection_json": "/mnt/\u4e16\u754c\u6a21\u578b/runs/caurc_chronological_2021_2024/ca_urc_head/selected_epoch_gamma.json",
+  "threshold_json": "/mnt/\u4e16\u754c\u6a21\u578b/runs/caurc_chronological_2021_2024/chronological_tail_thresholds.json",
+  "base_epoch": 49,
+  "head_epoch": 19,
+  "gamma": 5.0,
+  "gamma_upper_boundary": false,
+  "log10_pga_threshold": -2.4847278594970703,
+  "log10_pgv_threshold": -3.8409440517425537,
+  "training_performed": false,
+  "selection_performed": false,
+  "threshold_recomputed": false,
+  "manifest": "/mnt/\u4e16\u754c\u6a21\u578b/data/model_manifests/scenario_t0_5s_k5_time_clean.csv",
+  "split_column": "split_time_clean",
+  "ridgecrest_label": "ridgecrest_ood",
+  "ridgecrest_manifest_events": 593,
+  "split_counts": {
+    "train": 703,
+    "ridgecrest_ood": 593,
+    "test": 192,
+    "validation": 132
+  },
+  "metric_aggregation": "targets -> repeats -> events",
+  "bootstrap_unit": "event within one held-out Ridgecrest sequence",
+  "sequence_cluster_bootstrap": false
+}

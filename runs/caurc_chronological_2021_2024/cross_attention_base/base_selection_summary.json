@@ -1,0 +1,9 @@
+{
+  "best_epoch": 49,
+  "validation_mae_pga": 0.374605224770729,
+  "validation_mae_pgv": 0.32988679095952195,
+  "validation_score": 0.3522460078651255,
+  "train_events": 703,
+  "validation_events": 132,
+  "checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/caurc_chronological_2021_2024/cross_attention_base/best_model.pt"
+}

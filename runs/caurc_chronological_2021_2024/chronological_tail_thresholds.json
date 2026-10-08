@@ -1,0 +1,15 @@
+{
+  "split_column": "split_time_clean",
+  "train_label": "train",
+  "t0_sec": 5,
+  "quantile": 0.9,
+  "log10_pga_threshold": -2.4847278594970703,
+  "log10_pgv_threshold": -3.8409440517425537,
+  "n_training_station_targets": 51766,
+  "test_split_evaluated": false,
+  "threshold_reused": true,
+  "source_json": "/mnt/\u4e16\u754c\u6a21\u578b/runs/time_clean_mean_base_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json",
+  "validation_labels_used": false,
+  "test_labels_used": false,
+  "ridgecrest_labels_used": false
+}

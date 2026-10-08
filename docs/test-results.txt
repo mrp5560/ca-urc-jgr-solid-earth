@@ -1,0 +1,7 @@
+Publication package validation (2026-10-08)
+Python: 3.11.5
+Working directory: publication repository root
+Command: python -m pytest test_physical_diagnostics.py test_snapshot_preprocessing.py test_snapshot_training.py -q
+Result: 65 passed in 26.20s
+Exit code: 0
+Scope: existing synthetic tests for physical diagnostics, prefix-input preprocessing, and prefix training/data adaptation. No scientific behavior was changed to make these tests pass. This result does not establish complete model retraining or full-archive waveform regeneration.

@@ -1,0 +1,4 @@
+variant,best_epoch,best_validation_score,parameter_count,training_seconds,test_split_evaluated_during_training,tail_extra_weight
+cross_attention,42,0.3031593009037672,306178,15028.8519718647,False,
+graph,50,0.30380194585008513,207107,22435.327903985977,False,
+tail_weighted_attention,47,0.32890337039019174,148867,15492.562661647797,False,2.0

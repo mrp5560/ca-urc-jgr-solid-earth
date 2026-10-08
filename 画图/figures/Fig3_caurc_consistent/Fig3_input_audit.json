@@ -1,0 +1,32 @@
+{
+  "n_events": 224,
+  "n_event_repeats": 4480,
+  "n_target_rows": 44800,
+  "duplicate_target_keys": 0,
+  "minimum_repeats": 20,
+  "maximum_repeats": 20,
+  "minimum_targets_per_repeat": 10,
+  "maximum_targets_per_repeat": 10,
+  "upstream_prediction_alignment": "not proven by these necessary checks",
+  "correction_range_pga": [
+    0.0045511102942619175,
+    0.1588918373062067
+  ],
+  "tail_pga": {
+    "n_rows": 1363,
+    "n_events": 98,
+    "n_event_repeats": 598
+  },
+  "correction_range_pgv": [
+    0.0010018195830721055,
+    0.2075355396936187
+  ],
+  "tail_pgv": {
+    "n_rows": 1485,
+    "n_events": 87,
+    "n_event_repeats": 560
+  },
+  "n_constructed_spatiotemporal_groups": 22,
+  "bootstrap_mode": "hierarchical_group_event",
+  "maximum_ecdf_summary_difference": 3.3306690738754696e-16
+}

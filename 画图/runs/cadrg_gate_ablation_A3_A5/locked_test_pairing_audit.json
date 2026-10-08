@@ -1,0 +1,8 @@
+{
+  "current_rows": 44800,
+  "reference_rows": 44800,
+  "paired_rows": 44800,
+  "exact_pairing": true,
+  "max_abs_truth_diff_pga": 8.881784197001252e-16,
+  "max_abs_truth_diff_pgv": 8.881784197001252e-16
+}

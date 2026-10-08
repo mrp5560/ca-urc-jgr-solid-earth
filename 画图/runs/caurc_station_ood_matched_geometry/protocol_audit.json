@@ -1,0 +1,17 @@
+{
+  "rows": 23400,
+  "events": 195,
+  "event_repeat_groups": 3900,
+  "seen_rows": 11700,
+  "unseen_rows": 11700,
+  "unique_seen_stations": 264,
+  "unique_unseen_stations": 65,
+  "bad_same_input_station_groups": 0,
+  "bad_equal_role_budget_groups": 0,
+  "seen_targets_per_group_unique": [
+    3
+  ],
+  "unseen_targets_per_group_unique": [
+    3
+  ]
+}

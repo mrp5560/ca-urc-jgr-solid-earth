@@ -1,0 +1,4 @@
+variant,best_epoch,best_validation_loss,parameter_count,training_seconds,checkpoint
+attention_no_waveform,23,0.136601311189157,59139,9616.829058885574,/mnt/世界模型/runs/phase1_attention_feature_ablation/attention_no_waveform/best_model.pt
+attention_no_geometry,18,0.14817118260787496,148867,9043.32490491867,/mnt/世界模型/runs/phase1_attention_feature_ablation/attention_no_geometry/best_model.pt
+attention_no_p_offset,47,0.0802035598795195,148867,13657.630695104599,/mnt/世界模型/runs/phase1_attention_feature_ablation/attention_no_p_offset/best_model.pt

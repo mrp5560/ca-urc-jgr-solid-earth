@@ -1,0 +1,29 @@
+analysis,caliper_km,quantity,population,metric,reference_value,candidate_value,delta,relative_change_percent,delta_percentage_points,n_events,model
+CA-URC vs Base on geometry-matched unseen targets,20.0,pga,overall,mae,0.3570138458377286,0.35794717766770123,0.0009333318299726393,0.26142734822583036,,195,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pga,overall,factor2,0.5205626869477389,0.5192948824569449,-0.0012678044907940937,,-0.1267804490794,195,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pga,overall,under05,0.1422994225776634,0.12044991145471416,-0.02184951112294924,,-2.1849511122949234,195,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pga,high_motion_tail,mae,0.8609599762726144,0.7997299709554017,-0.06123000531721291,-7.111829469971194,,37,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pga,high_motion_tail,factor2,0.07682992590113333,0.0964865794587157,0.01965665355758235,,1.9656653557582366,37,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pga,high_motion_tail,under05,0.8259905194889715,0.7805480181641172,-0.04544250132485427,,-4.544250132485428,37,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pgv,overall,mae,0.30931017846853687,0.3043240270442095,-0.004986151424327408,-1.61202306662357,,195,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pgv,overall,factor2,0.6253673032069675,0.6312329135028985,0.005865610295931004,,0.5865610295930912,195,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pgv,overall,under05,0.13791429471889102,0.11214591659241178,-0.02576837812647926,,-2.576837812647924,195,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pgv,high_motion_tail,mae,1.0203099978823458,0.9605860284449109,-0.05972396943743482,-5.85351212488283,,30,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pgv,high_motion_tail,factor2,0.10795829442888265,0.12004979769685652,0.012091503267973857,,1.2091503267973869,30,
+CA-URC vs Base on geometry-matched unseen targets,20.0,pgv,high_motion_tail,under05,0.8100470129572296,0.7841405802086917,-0.02590643274853801,,-2.5906432748537878,30,
+Residual matched unseen-minus-seen OOD gap,20.0,pga,overall,mae,,,0.048769972328463945,,,195,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pga,overall,under05,,,0.0005943972453855791,,0.05943972453855791,195,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pga,both_high_motion_tail,mae,,,0.09093590689103367,,,23,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pga,both_high_motion_tail,under05,,,0.20069194725945297,,20.069194725945298,23,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,overall,mae,,,0.015771999506908413,,,195,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,overall,under05,,,-0.0008522049199393008,,-0.08522049199393009,195,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,both_high_motion_tail,mae,,,0.0037469940340982256,,,21,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,both_high_motion_tail,under05,,,-0.0344236817534031,,-3.4423681753403104,21,cross_attention_base
+Residual matched unseen-minus-seen OOD gap,20.0,pga,overall,mae,,,0.053925447512387224,,,195,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pga,overall,under05,,,0.00494910423077844,,0.494910423077844,195,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pga,both_high_motion_tail,mae,,,0.0993289845891693,,,23,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pga,both_high_motion_tail,under05,,,0.12536776724419743,,12.536776724419743,23,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,overall,mae,,,0.022836133326162657,,,195,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,overall,under05,,,-0.0032932549641885214,,-0.3293254964188521,195,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,both_high_motion_tail,mae,,,0.028317106179183423,,,21,ca_urc
+Residual matched unseen-minus-seen OOD gap,20.0,pgv,both_high_motion_tail,under05,,,-0.02239360656543319,,-2.239360656543319,21,ca_urc

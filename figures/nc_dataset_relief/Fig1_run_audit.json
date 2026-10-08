@@ -1,0 +1,32 @@
+{
+  "master_manifest": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\model_manifests\\all_events_with_scenario_flags.csv",
+  "scenario_manifest": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+  "h5_root": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+  "n_master_rows": 3239,
+  "n_h5_resolved": 3239,
+  "n_h5_missing": 0,
+  "n_preprocessed_events": 3239,
+  "n_eligible_events": 1620,
+  "n_stations": 447,
+  "t0_sec": 5.0,
+  "input_stations": 5,
+  "target_stations": 10,
+  "expected_preprocessed": 3239,
+  "expected_eligible": 1620,
+  "ridgecrest_identification": "transparent spatiotemporal fallback: 2019-07-01 to 2019-10-01, 34.0–36.5°N, 118.6–116.0°W",
+  "time_start": "2010-01-01 02:33:42.820000+00:00",
+  "time_end": "2024-12-22 19:03:49.510000+00:00",
+  "magnitude_min": 3.0,
+  "magnitude_max": 7.1,
+  "relief_raster": "F:\\数据集\\世界模型\\basemap\\ETOPO_2022_surface.tif",
+  "map_extent": [
+    -121.5,
+    -114.2,
+    31.5,
+    37.2
+  ],
+  "input_file_sha256": {
+    "master_manifest": "c203cc79d416a764b72ab2112d829718431a73831bf9e41209a5dbaaefb8d9aa",
+    "scenario_manifest": "a630b226ee957333717191fa44d76dd7515855fb66f5669e56620399c2a7059e"
+  }
+}

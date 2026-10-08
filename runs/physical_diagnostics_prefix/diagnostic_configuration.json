@@ -1,0 +1,20 @@
+{
+  "version": "prefix_physical_diagnostics_v1",
+  "snapshot_protocol_id": "e2657d30a5eb6c54fb6e212d5acb09e337a88b74b97c4df9bd102f3b8bd742f7",
+  "source_hashes": {
+    "protocol": "4943407bb50d0fabbda2e30d888721e9530fb7016928979099eb6dff3063897a",
+    "cohort": "4f75b40247ad85ec63dcd40ae962f4357e1356a97f4e4fd6e227013f26a82513",
+    "draws": "fcdc3f83ddfd5d9bdb79837aea0392d65617b4fa283a562a46f833e99e616a1b",
+    "truth": "6d0fcb430a90022bd478eea62b7d477a4638c69ea51440d5251e498f0de97357",
+    "audit": "c6ca2ee4f9c8a22caef7c5e6640858badf322bd051b766ba1fdc2e8390366ce2",
+    "metrics": "67d55fef03ca0cb8e14f76575273a5c0c06840141df46d91f1547e1da3b5cdaf",
+    "predictions": "e38b6ac06d794af84cdac8821ca1adab2f247d656555000980151c0f4d89cf19"
+  },
+  "script_sha256": "bbf6f9ce34f1ca96aded91a228394d91e9ccb4b20ae17313856b9de09332936c",
+  "train_geometry_repeats": 3,
+  "bootstrap_replicates": 10000,
+  "min_events_ci": 10,
+  "min_groups_ci": 5,
+  "source_h5_rehash_requested": false,
+  "diagnostic_config_id": "cf4e1877ecd746e642add6f8857a650f1f2e6a4cc5130bedf0567439e5931c60"
+}

@@ -1,0 +1,54 @@
+{
+  "diagnostic_config_id": "cf4e1877ecd746e642add6f8857a650f1f2e6a4cc5130bedf0567439e5931c60",
+  "snapshot_protocol_id": "e2657d30a5eb6c54fb6e212d5acb09e337a88b74b97c4df9bd102f3b8bd742f7",
+  "status": "analysis_complete",
+  "pairing": {
+    "test_events": 219,
+    "prediction_rows": 43800,
+    "saved_current_run_input_and_target_draws_match": true,
+    "max_abs_truth_diff_to_current_run_audit": 0.0,
+    "original_historical_input_index_comparison": "not stored in this reference; canonical seed plus exact target draw are checked",
+    "tail_flags_match_frozen_training_thresholds": true
+  },
+  "test_events": 219,
+  "target_rows": 43800,
+  "test_groups": 22,
+  "t0_sec": 5,
+  "distance_bins": {
+    "distance_internal_edges_km": [
+      94.87298583984375,
+      139.93450927734375
+    ],
+    "labels": [
+      "Near",
+      "Middle",
+      "Far"
+    ],
+    "intervals": [
+      "[0,q1)",
+      "[q1,q2)",
+      "[q2,+inf)"
+    ],
+    "fit_population": "retained TRAIN events only; no predictions or amplitudes read",
+    "train_events": 1177,
+    "train_target_draws": 35310,
+    "repeats_per_event": 3,
+    "draw_protocol": "source63 SHA256(train:event_id:repeat:r:seed); input then target draw",
+    "weighting": "equal events/repeats/targets; K,Q and repeats fixed across events"
+  },
+  "source_h5_rehash_performed": false,
+  "max_global_metric_reconciliation_error": 8.771195575407731e-17,
+  "missing_p_and_s_rows_kept_as_unknown": true,
+  "no_model_loading_training_or_inference": true,
+  "no_waveform_arrays_read": true,
+  "data_sources": "saved predictions/draws, original HDF5 metadata, retained manifest",
+  "scope": "Exploratory retrospective stratification; archived arrivals; no causal attribution",
+  "ci_scope": "pointwise hierarchical group->event; no multiple-testing or train-seed uncertainty claim",
+  "sparsity_guards": "reporting guards, not proof of adequacy",
+  "dependencies": {
+    "python": "3.11.5",
+    "numpy": "2.4.6",
+    "pandas": "3.0.5",
+    "h5py": "3.14.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "reused": true,
+  "source_checkpoint": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\runs\\cadrg_station_ood\\cross_attention_base\\best_model.pt",
+  "checkpoint": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\runs\\caurc_station_ood\\cross_attention_base\\best_model.pt",
+  "best_epoch": 50,
+  "best_validation_mae_pga": 0.30163847388945925,
+  "best_validation_mae_pgv": 0.2802716100793089,
+  "station_ood_training": true,
+  "test_used_for_base_selection": false
+}

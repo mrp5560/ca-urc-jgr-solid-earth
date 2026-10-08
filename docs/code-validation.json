@@ -1,0 +1,9 @@
+{
+  "check": "Python source syntax and unchanged-copy verification",
+  "python": "3.11.5",
+  "copied_python_files": 163,
+  "syntax_failures": [],
+  "portable_argument_defaults_changed": 49,
+  "source_files_with_portable_default_changes": 25,
+  "scope": "No complete retraining or waveform regeneration performed by this check."
+}

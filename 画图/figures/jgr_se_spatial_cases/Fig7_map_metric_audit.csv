@@ -1,0 +1,17 @@
+case,event_id,repeat,scope,quantity,model,N_targets,n_tail,mae,tail_mae,tail_u05_fraction,tail_empty,tail_mae_would_round_to_0_00,demo
+representative,39464360,13,expanded_non_input_stations,pga,base,103,7,0.2526910802693043,0.28888334546770367,0.2857142857142857,False,False,False
+representative,39464360,13,expanded_non_input_stations,pga,caurc,103,7,0.23714914368194284,0.2534815413611276,0.14285714285714285,False,False,False
+representative,39464360,13,expanded_non_input_stations,pgv,base,103,1,0.2319732707681008,0.0019342899322509766,0.0,False,True,False
+representative,39464360,13,expanded_non_input_stations,pgv,caurc,103,1,0.2319609262410877,0.18360280990600586,0.0,False,False,False
+successful_correction,39111991,14,expanded_non_input_stations,pga,base,110,19,0.4178492275151339,0.4797932223269814,0.5263157894736842,False,False,False
+successful_correction,39111991,14,expanded_non_input_stations,pga,caurc,110,19,0.3545401009646329,0.410271029723318,0.3684210526315789,False,False,False
+successful_correction,39111991,14,expanded_non_input_stations,pgv,base,110,19,0.4345633723519065,0.5196351503071032,0.5789473684210527,False,False,False
+successful_correction,39111991,14,expanded_non_input_stations,pgv,caurc,110,19,0.348753868449818,0.3955776942403693,0.3684210526315789,False,False,False
+residual_failure,40865216,14,expanded_non_input_stations,pga,base,109,39,0.9530409186258229,1.2961859504381816,0.9743589743589743,False,False,False
+residual_failure,40865216,14,expanded_non_input_stations,pga,caurc,109,39,0.9185188642335594,1.2572312339758263,0.9743589743589743,False,False,False
+residual_failure,40865216,14,expanded_non_input_stations,pgv,base,109,24,1.0584821701049805,1.4575011432170868,1.0,False,False,False
+residual_failure,40865216,14,expanded_non_input_stations,pgv,caurc,109,24,1.0139734920011747,1.3997760713100433,1.0,False,False,False
+overcorrection,40865192,3,expanded_non_input_stations,pga,base,109,80,0.7194648800639931,0.8221004910767078,0.925,False,False,False
+overcorrection,40865192,3,expanded_non_input_stations,pga,caurc,109,80,0.6343162513654167,0.7233752869069576,0.8375,False,False,False
+overcorrection,40865192,3,expanded_non_input_stations,pgv,base,109,95,0.634694482208392,0.6657940011275442,0.6105263157894737,False,False,False
+overcorrection,40865192,3,expanded_non_input_stations,pgv,caurc,109,95,0.53185190410789,0.5529593819066098,0.4842105263157895,False,False,False

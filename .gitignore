@@ -1,0 +1,15 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+reproduced/
+.downloads/
+.DS_Store
+Thumbs.db
+
+.data-download/
+data/scedc/snapshot_available_t0_5s_k5/events/*.h5
+data/scedc/processed_full_v4/events/*.h5
+!data/scedc/processed_full_v4/events/39111991.h5
+!data/scedc/processed_full_v4/events/39464360.h5
+!data/scedc/processed_full_v4/events/40865192.h5
+!data/scedc/processed_full_v4/events/40865216.h5

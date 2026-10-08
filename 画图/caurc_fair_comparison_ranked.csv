@@ -1,0 +1,15 @@
+Method,Type,Quantity,Overall_MAE,Tail_MAE,Tail_U0.5_pct,Tail_penalty,rank_overall_mae,rank_tail_mae,rank_tail_u05
+Nearest observed,Causal propagation,PGA,0.606,0.957,69.78,0.351,6,7,7
+IDW observed,Causal propagation,PGA,0.819,0.698,54.56,-0.121,7,5,2
+PLUM-like,Causal propagation,PGA,0.528,0.875,66.75,0.347,5,6,6
+Graph,Learned causal,PGA,0.31,0.615,62.13,0.305,3,3,4
+Tail-weighted Attention,Learned causal,PGA,0.34,0.612,60.51,0.27199999999999996,4,2,3
+Cross-Attention Base,Learned causal,PGA,0.306,0.639,64.0,0.333,1,4,5
+CA-URC,Proposed,PGA,0.306,0.567,53.8,0.26099999999999995,1,1,1
+Nearest observed,Causal propagation,PGV,0.507,1.07,72.45,0.5630000000000001,5,7,6
+IDW observed,Causal propagation,PGV,0.605,0.806,58.89,0.20100000000000007,7,5,2
+PLUM-like,Causal propagation,PGV,0.534,0.813,55.62,0.2789999999999999,6,6,1
+Graph,Learned causal,PGV,0.262,0.759,76.59,0.497,1,4,7
+Tail-weighted Attention,Learned causal,PGV,0.286,0.741,70.06,0.455,4,2,4
+Cross-Attention Base,Learned causal,PGV,0.266,0.747,71.46,0.481,3,3,5
+CA-URC,Proposed,PGV,0.263,0.648,60.35,0.385,2,1,3

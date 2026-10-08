@@ -1,0 +1,156 @@
+{
+  "final_model_name": "CA-URC",
+  "final_model_formula": "y_CA + p_under^gamma * Delta",
+  "selection_source": "locked event-repeat predictions; maps not inspected during selection",
+  "all_heldout_query_purpose": "descriptive spatial visualization only",
+  "aggregate_metric_source": "locked target draws",
+  "prediction_audit": {
+    "prediction_rows": 44800,
+    "events": 224,
+    "event_repeat_groups": 4480,
+    "pga_tail_rows": 1363,
+    "pgv_tail_rows": 1485,
+    "pga_tail_events": 98,
+    "pgv_tail_events": 87
+  },
+  "model_audit": {
+    "device": "cpu",
+    "variant": "A4_under_only",
+    "selected_epoch": 3,
+    "selected_gamma": 5.0,
+    "hidden_dim": 128,
+    "attention_heads": 4,
+    "risk_hidden": 64,
+    "maximum_correction": 1.5,
+    "base_checkpoint_variant": "cross_attention",
+    "head_checkpoint_variant": "A4_under_only"
+  },
+  "torch_backend_audit": {
+    "torch_version": "2.13.0+cpu",
+    "cuda_available": false,
+    "deterministic_algorithms": true,
+    "cudnn_benchmark": false,
+    "cudnn_deterministic": true,
+    "cudnn_allow_tf32": false,
+    "cuda_matmul_allow_tf32": false,
+    "flash_sdp": false,
+    "mem_efficient_sdp": false,
+    "math_sdp": true
+  },
+  "selected_cases": {
+    "representative": {
+      "event_id": "39464360",
+      "repeat": 13
+    },
+    "successful_correction": {
+      "event_id": "39111991",
+      "repeat": 14
+    },
+    "residual_failure": {
+      "event_id": "40865216",
+      "repeat": 14
+    },
+    "overcorrection": {
+      "event_id": "40865192",
+      "repeat": 3
+    }
+  },
+  "per_case_reproduction_audit": {
+    "representative": {
+      "max_abs_truth_diff": 4.76837158203125e-07,
+      "max_abs_base_diff": 1.621246337890625e-05,
+      "max_abs_final_diff": 1.8709241286885003e-05,
+      "archive_reproduction_within_soft_tolerance": true,
+      "archive_reproduction_status": "pass",
+      "truth_tolerance": 2e-06,
+      "prediction_tolerance": 0.0002,
+      "hard_prediction_ceiling": 0.001,
+      "max_query_set_dependence": 9.5367431640625e-07,
+      "query_tolerance": 0.0002,
+      "query_hard_ceiling": 0.001,
+      "event_id": "39464360",
+      "repeat": 13,
+      "random_seed": 3780245700,
+      "n_stations": 108,
+      "n_triggered_by_t0": 8,
+      "n_input_stations": 5,
+      "n_all_heldout_stations": 103,
+      "h5_path": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events\\39464360.h5"
+    },
+    "successful_correction": {
+      "max_abs_truth_diff": 4.76837158203125e-07,
+      "max_abs_base_diff": 5.7220458984375e-05,
+      "max_abs_final_diff": 5.8079534263733024e-05,
+      "archive_reproduction_within_soft_tolerance": true,
+      "archive_reproduction_status": "pass",
+      "truth_tolerance": 2e-06,
+      "prediction_tolerance": 0.0002,
+      "hard_prediction_ceiling": 0.001,
+      "max_query_set_dependence": 9.5367431640625e-07,
+      "query_tolerance": 0.0002,
+      "query_hard_ceiling": 0.001,
+      "event_id": "39111991",
+      "repeat": 14,
+      "random_seed": 186052336,
+      "n_stations": 115,
+      "n_triggered_by_t0": 5,
+      "n_input_stations": 5,
+      "n_all_heldout_stations": 110,
+      "h5_path": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events\\39111991.h5"
+    },
+    "residual_failure": {
+      "max_abs_truth_diff": 4.76837158203125e-07,
+      "max_abs_base_diff": 2.1696090698242188e-05,
+      "max_abs_final_diff": 2.532472793959073e-05,
+      "archive_reproduction_within_soft_tolerance": true,
+      "archive_reproduction_status": "pass",
+      "truth_tolerance": 2e-06,
+      "prediction_tolerance": 0.0002,
+      "hard_prediction_ceiling": 0.001,
+      "max_query_set_dependence": 9.5367431640625e-07,
+      "query_tolerance": 0.0002,
+      "query_hard_ceiling": 0.001,
+      "event_id": "40865216",
+      "repeat": 14,
+      "random_seed": 3321913671,
+      "n_stations": 114,
+      "n_triggered_by_t0": 15,
+      "n_input_stations": 5,
+      "n_all_heldout_stations": 109,
+      "h5_path": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events\\40865216.h5"
+    },
+    "overcorrection": {
+      "max_abs_truth_diff": 2.384185791015625e-07,
+      "max_abs_base_diff": 0.00011372566223144531,
+      "max_abs_final_diff": 0.0001183512832159117,
+      "archive_reproduction_within_soft_tolerance": true,
+      "archive_reproduction_status": "pass",
+      "truth_tolerance": 2e-06,
+      "prediction_tolerance": 0.0002,
+      "hard_prediction_ceiling": 0.001,
+      "max_query_set_dependence": 4.76837158203125e-07,
+      "query_tolerance": 0.0002,
+      "query_hard_ceiling": 0.001,
+      "event_id": "40865192",
+      "repeat": 3,
+      "random_seed": 280079551,
+      "n_stations": 114,
+      "n_triggered_by_t0": 18,
+      "n_input_stations": 5,
+      "n_all_heldout_stations": 109,
+      "h5_path": "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events\\40865192.h5"
+    }
+  },
+  "success_non_tail_tolerance": 0.02,
+  "audit_tolerance": 0.0002,
+  "query_tolerance": 0.0002,
+  "file_sha256": {
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\cadrg_gate_ablation_A3_A5\\locked_test_ablation_predictions.csv": "fd312d7761968ff0cf57ee17b4a1a7c2ffafb8f6bf3f75f3751d6821c57717ee",
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\model_manifests\\scenario_t0_5s_k5_linux.csv": "e2ab3ea8efc5ba17613275dfebb4ec1acba6babaac6e3c2a2cb04d0a13b87bbe",
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\tail_gated_compromise_t0_5s_k5\\tail_thresholds_q0.90_t0_5s.json": "1cc591a7b63c58ef62b1a142c17f0d82fba74524b35d68167a605f8fdefc16c1",
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\final_strong_baselines_reuse_locked\\cross_attention\\best_model.pt": "5a69e7fca184fea390b67d4923d2ab7b5a97b0e68619c9d72b31ef2c003382ce",
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\cadrg_gate_ablation_A3_A5\\A4_under_only\\selected_head.pt": "75f3e4b454ff07236a26b140697156ac2a01f6ec3ffd04b2b4ef21a48602f8f7",
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\cadrg_gate_ablation_A3_A5\\A4_under_only\\selected_epoch_gamma.json": "2d7ef5f558dc08b69dfd7fa06cdd08b7d07a2e9b5dfacc69878115b0b4903143"
+  },
+  "demo": false
+}

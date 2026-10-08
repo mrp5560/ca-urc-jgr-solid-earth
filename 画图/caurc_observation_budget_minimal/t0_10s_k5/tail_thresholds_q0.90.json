@@ -1,0 +1,12 @@
+{
+  "split_column": "split_grouped",
+  "train_label": "train",
+  "t0_sec": 10,
+  "quantile": 0.9,
+  "definition": "TRAIN-only quantile over all stations in budget-eligible training events; remaining horizontal peak after snapshot",
+  "log10_pga_threshold": -2.1824334621429444,
+  "log10_pgv_threshold": -3.4700650691986086,
+  "n_training_station_targets": 167537,
+  "n_training_events": 1758,
+  "test_accessed": false
+}

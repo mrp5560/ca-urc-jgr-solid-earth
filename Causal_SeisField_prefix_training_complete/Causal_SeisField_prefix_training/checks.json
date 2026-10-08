@@ -1,0 +1,45 @@
+{
+  "source_copies": [
+    {
+      "uploaded_file": "45_phase2_strong_baseline_suite(2).py",
+      "packaged_file": "source45_baselines.py",
+      "sha256": "b01f48fb04c99fc038ce510b6c537b078bf520b919c4f84ed8e0c9d7fe981680",
+      "byte_identical": true
+    },
+    {
+      "uploaded_file": "63_train_and_evaluate_cadrg_gate_ablations_A3_A5(2).py",
+      "packaged_file": "source63_risk.py",
+      "sha256": "42342e9e9e47269ac9fb016bd78b5be4da140ed0f9c80346996e0e41e28f44ce",
+      "byte_identical": true
+    },
+    {
+      "uploaded_file": "snapshot_input_reader.py",
+      "packaged_file": "snapshot_input_reader.py",
+      "sha256": "87b28d48c4d5bb521b50989538fa94fb5f3dafa235771708d30e6603f02446f8",
+      "byte_identical": true
+    }
+  ],
+  "unit_tests": {
+    "passed": 21,
+    "failed": 0,
+    "pytest_summary": "21 passed in 5.09s",
+    "includes_synthetic_cpu_end_to_end": true
+  },
+  "syntax_check": "passed",
+  "cli_help": "passed",
+  "environment": {
+    "python": "3.13.5",
+    "torch": "2.10.0+cpu",
+    "numpy": "2.3.5",
+    "pandas": "2.2.3",
+    "h5py": "3.15.1"
+  },
+  "data_available": "Synthetic test fixtures only; no real event HDF5/QC/weights/threshold files",
+  "real_training_run": false,
+  "real_17_event_failure_causes_verified": false,
+  "limitations": [
+    "Default audit blocks unresolved events and makes no unreviewed exclusions.",
+    "Real grouping column must be supplied for hierarchical CIs.",
+    "Archived P picks and offline labels remain; not end-to-end real-time validation."
+  ]
+}

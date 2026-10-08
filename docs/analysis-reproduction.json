@@ -1,0 +1,161 @@
+{
+  "date": "2026-10-08",
+  "scripts_completed": [
+    "69_sequence_aware_paired_bootstrap_caurc.py",
+    "70_caurc_warning_lead_time_analysis.py",
+    "78_recompute_final_propagation_metrics_caurc_protocol.py"
+  ],
+  "exit_codes": [
+    0,
+    0,
+    0
+  ],
+  "bootstrap_repetitions": 10000,
+  "comparison": "All regenerated CSV outputs compared with same-named archived outputs, same row/column ordering, dtype-flexible, atol=rtol=1e-12.",
+  "checks": [
+    {
+      "analysis": "analysis69",
+      "file": "all_sequence_aware_bootstrap_summary.csv",
+      "reference": "runs/caurc_sequence_aware_bootstrap/all_sequence_aware_bootstrap_summary.csv",
+      "rows": 160,
+      "columns": 24,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis69",
+      "file": "event_level_canonical_metrics.csv",
+      "reference": "runs/caurc_sequence_aware_bootstrap/event_level_canonical_metrics.csv",
+      "rows": 15192,
+      "columns": 7,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis69",
+      "file": "hierarchical_bootstrap_summary.csv",
+      "reference": "runs/caurc_sequence_aware_bootstrap/hierarchical_bootstrap_summary.csv",
+      "rows": 80,
+      "columns": 24,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis69",
+      "file": "paper_primary_bootstrap_table.csv",
+      "reference": "runs/caurc_sequence_aware_bootstrap/paper_primary_bootstrap_table.csv",
+      "rows": 60,
+      "columns": 17,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis69",
+      "file": "sequence_cluster_bootstrap_summary.csv",
+      "reference": "runs/caurc_sequence_aware_bootstrap/sequence_cluster_bootstrap_summary.csv",
+      "rows": 80,
+      "columns": 24,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis69",
+      "file": "test_sequence_group_summary.csv",
+      "reference": "runs/caurc_sequence_aware_bootstrap/test_sequence_group_summary.csv",
+      "rows": 22,
+      "columns": 2,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis70",
+      "file": "caurc_minus_cross_attention_by_peak_lead_time.csv",
+      "reference": "runs/caurc_warning_lead_time/caurc_minus_cross_attention_by_peak_lead_time.csv",
+      "rows": 60,
+      "columns": 11,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis70",
+      "file": "caurc_predictions_with_lead_times.csv",
+      "reference": "runs/caurc_warning_lead_time/caurc_predictions_with_lead_times.csv",
+      "rows": 44800,
+      "columns": 43,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis70",
+      "file": "future_window_edge_audit.csv",
+      "reference": "runs/caurc_warning_lead_time/future_window_edge_audit.csv",
+      "rows": 2,
+      "columns": 4,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis70",
+      "file": "latency_sensitivity.csv",
+      "reference": "runs/caurc_warning_lead_time/latency_sensitivity.csv",
+      "rows": 16,
+      "columns": 10,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis70",
+      "file": "lead_time_distribution_summary.csv",
+      "reference": "runs/caurc_warning_lead_time/lead_time_distribution_summary.csv",
+      "rows": 20,
+      "columns": 14,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis70",
+      "file": "metrics_by_peak_lead_time.csv",
+      "reference": "runs/caurc_warning_lead_time/metrics_by_peak_lead_time.csv",
+      "rows": 288,
+      "columns": 11,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis78",
+      "file": "caurc_vs_propagation_hierarchical_bootstrap.csv",
+      "reference": "runs/final_propagation_metrics_caurc_protocol/caurc_vs_propagation_hierarchical_bootstrap.csv",
+      "rows": 48,
+      "columns": 24,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis78",
+      "file": "caurc_vs_propagation_sequence_cluster_bootstrap.csv",
+      "reference": "runs/final_propagation_metrics_caurc_protocol/caurc_vs_propagation_sequence_cluster_bootstrap.csv",
+      "rows": 48,
+      "columns": 24,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis78",
+      "file": "event_level_canonical_metrics.csv",
+      "reference": "runs/final_propagation_metrics_caurc_protocol/event_level_canonical_metrics.csv",
+      "rows": 10128,
+      "columns": 7,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis78",
+      "file": "final_propagation_canonical_metrics.csv",
+      "reference": "runs/final_propagation_metrics_caurc_protocol/final_propagation_canonical_metrics.csv",
+      "rows": 64,
+      "columns": 7,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis78",
+      "file": "locked_paired_propagation_predictions.csv",
+      "reference": "runs/final_propagation_metrics_caurc_protocol/locked_paired_propagation_predictions.csv",
+      "rows": 44800,
+      "columns": 17,
+      "status": "match"
+    },
+    {
+      "analysis": "analysis78",
+      "file": "paper_propagation_table.csv",
+      "reference": "runs/final_propagation_metrics_caurc_protocol/paper_propagation_table.csv",
+      "rows": 3,
+      "columns": 18,
+      "status": "match"
+    }
+  ]
+}

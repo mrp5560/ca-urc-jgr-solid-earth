@@ -1,0 +1,26 @@
+{
+  "risk_score_range": [
+    0.0,
+    1.0
+  ],
+  "correction_scale_max": 0.17711355313658725,
+  "correction_values_above_scale": 7,
+  "demo": false,
+  "canvas_width_mm": 183.0,
+  "canvas_height_mm": 207.99999999999997,
+  "font_settings_pt": {
+    "body": 8.2,
+    "axis": 8.2,
+    "tick": 7.8,
+    "title": 8.1,
+    "header": 8.7,
+    "annotation": 7.8,
+    "metric": 7.7,
+    "legend": 7.8,
+    "panel": 10.5
+  },
+  "minimum_text_artist_font_pt": 7.7,
+  "text_outside_canvas": [],
+  "export_dpi": 600,
+  "bbox_inches": null
+}

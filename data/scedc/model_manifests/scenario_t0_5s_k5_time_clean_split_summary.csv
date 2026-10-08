@@ -1,0 +1,5 @@
+split_time_clean,n,year_min,year_max,magnitude_min,magnitude_mean,magnitude_max
+ridgecrest_ood,593,2019,2019,3.0,3.4315345699831368,7.1
+test,192,2021,2024,3.0,3.352604166666667,4.9
+train,703,2010,2018,3.0,3.4226173541963014,5.4
+validation,132,2019,2020,3.0,3.3068181818181817,4.5

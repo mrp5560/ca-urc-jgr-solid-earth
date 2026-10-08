@@ -1,0 +1,13 @@
+{
+  "model": "CA-URC",
+  "variant": "A4_under_only",
+  "base_epoch": 49,
+  "head_epoch": 19,
+  "gamma": 5.0,
+  "training_performed": false,
+  "selection_performed": false,
+  "threshold_recomputed": false,
+  "ridgecrest_accessed": true,
+  "ridgecrest_events": 593,
+  "ridgecrest_rows": 118600
+}

@@ -1,0 +1,13 @@
+{
+  "tail_quantile": 0.9,
+  "threshold_repeats": 10,
+  "n_train_target_rows": 99400,
+  "log10_pga_threshold": -2.183785915374756,
+  "log10_pgv_threshold": -3.457585573196411,
+  "pga_threshold_mps2": 0.0065495893359184265,
+  "pgv_threshold_mps": 0.00034866988426074386,
+  "threshold_source": "station-OOD TRAIN seen-only target draws",
+  "ood_station_labels_used": false,
+  "validation_labels_used": false,
+  "test_labels_used": false
+}

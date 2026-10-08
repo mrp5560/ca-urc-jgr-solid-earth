@@ -1,0 +1,17 @@
+split_grouped,magnitude_bin,n_events
+test,M3.0-3.2,234
+test,M3.3-3.5,129
+test,M3.6-3.9,68
+test,M4.0-4.9,51
+test,M5.0-5.9,4
+train,M3.0-3.2,1067
+train,M3.3-3.5,638
+train,M3.6-3.9,381
+train,M4.0-4.9,173
+train,M5.0-5.9,7
+train,M6+,1
+validation,M3.0-3.2,228
+validation,M3.3-3.5,123
+validation,M3.6-3.9,79
+validation,M4.0-4.9,53
+validation,M5.0-5.9,3

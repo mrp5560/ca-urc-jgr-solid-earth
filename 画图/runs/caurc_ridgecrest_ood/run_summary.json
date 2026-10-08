@@ -1,0 +1,17 @@
+{
+  "status": "completed",
+  "model": "CA-URC",
+  "variant": "A4_under_only",
+  "base_epoch": 49,
+  "head_epoch": 19,
+  "gamma": 5.0,
+  "training_performed": false,
+  "selection_performed": false,
+  "threshold_recomputed": false,
+  "ridgecrest_accessed": true,
+  "ridgecrest_events": 593,
+  "ridgecrest_rows": 118600,
+  "bootstrap_repetitions": 10000,
+  "bootstrap_unit": "event within single held-out Ridgecrest sequence",
+  "elapsed_seconds": 637.2804284095764
+}

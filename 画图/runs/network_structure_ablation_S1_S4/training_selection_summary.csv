@@ -1,0 +1,3 @@
+variant,best_epoch,best_validation_score,validation_mae_pga,validation_mae_pgv,parameter_count,training_seconds,test_accessed_during_selection,checkpoint
+S1_no_station_self_attention,49,0.29976061144408783,0.3118493649214747,0.28767185796670103,239874,8098.167791604996,False,/mnt/世界模型/runs/network_structure_ablation_S1_S4/S1_no_station_self_attention/best_model.pt
+S2_no_target_cross_attention,47,0.3112698402621704,0.3306054517170849,0.2919342288072559,239874,6914.668402671814,False,/mnt/世界模型/runs/network_structure_ablation_S1_S4/S2_no_target_cross_attention/best_model.pt

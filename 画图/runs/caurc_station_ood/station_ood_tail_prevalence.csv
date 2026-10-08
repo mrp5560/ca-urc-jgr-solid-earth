@@ -1,0 +1,5 @@
+target_role,quantity,n_rows,n_tail_rows,tail_prevalence,n_tail_events
+seen_target,pga,11700,510,0.04358974358974359,71
+seen_target,pgv,11700,566,0.04837606837606838,59
+unseen_station_target,pga,11700,751,0.06418803418803419,76
+unseen_station_target,pgv,11700,695,0.0594017094017094,59

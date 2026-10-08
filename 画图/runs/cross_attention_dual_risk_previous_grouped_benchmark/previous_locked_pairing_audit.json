@@ -1,0 +1,10 @@
+{
+  "previous_locked_predictions": "runs/attention_locked_power_gate_gamma7/locked_test_predictions.csv",
+  "available": true,
+  "current_rows": 44800,
+  "previous_rows": 44800,
+  "paired_rows": 44800,
+  "exact_pairing": true,
+  "max_abs_diff_truth_pga": 8.881784197001252e-16,
+  "max_abs_diff_truth_pgv": 8.881784197001252e-16
+}

@@ -1,0 +1,36 @@
+{
+  "methods": [
+    "Prefix_Base",
+    "Prefix_CAURC",
+    "FullRecord_Base",
+    "FullRecord_CAURC"
+  ],
+  "test_events": 219,
+  "target_rows": 43800,
+  "group_column": "sequence_group",
+  "bootstrap_replicates": 10000,
+  "rates_are_fractions": true,
+  "old_models_status": "Archived full-record model predictions reaggregated on retained test keys; they were not retrained on a reduced development cohort",
+  "primary_comparison": "Prefix_CAURC - Prefix_Base; NOT old Base versus new CA-URC",
+  "snapshot_protocol_id": "e2657d30a5eb6c54fb6e212d5acb09e337a88b74b97c4df9bd102f3b8bd742f7",
+  "selected_epoch": 1,
+  "selected_gamma": 5.0,
+  "pairing_audit": {
+    "current_rows": 43800,
+    "reference_rows_same_test_cohort": 43800,
+    "test_events": 219,
+    "exact_key_pairing": true,
+    "max_abs_truth_difference": 4.768371590913034e-07,
+    "tail_flags_match": {
+      "pga": true,
+      "pgv": true
+    },
+    "reference_rows_reordered_by_keys": true,
+    "input_indices_verified_against_archive": "not stored in this reference; canonical seed plus exact target draw are checked"
+  },
+  "frozen_base_unchanged": true,
+  "reference_csv_sha256": "fd312d7761968ff0cf57ee17b4a1a7c2ffafb8f6bf3f75f3751d6821c57717ee",
+  "old_base_column_prefix": "A2_cross_attention_base",
+  "old_caurc_column_prefix": "A4_under_only",
+  "scope": "Retrospective prefix-input supplementary experiment; archived P picks and offline labels retained"
+}

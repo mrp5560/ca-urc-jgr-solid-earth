@@ -1,0 +1,7 @@
+{
+  "t0_sec": 5,
+  "quantile": 0.9,
+  "log10_pga_threshold": -2.011172294616699,
+  "log10_pgv_threshold": -3.3072495460510254,
+  "n_training_station_targets": 121465
+}

@@ -1,0 +1,9 @@
+{
+  "snapshot_protocol_id": "e2657d30a5eb6c54fb6e212d5acb09e337a88b74b97c4df9bd102f3b8bd742f7",
+  "checkpoint": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\runs\\snapshot_available_validation_common1603\\base\\cross_attention\\best_model.pt",
+  "variant": "cross_attention",
+  "best_epoch": 50,
+  "best_validation_score": 0.3050293207648488,
+  "parameter_count": 306178,
+  "training_seconds": 45639.59186863899
+}

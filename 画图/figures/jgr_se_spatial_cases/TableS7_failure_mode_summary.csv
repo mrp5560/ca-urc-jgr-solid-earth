@@ -1,0 +1,8 @@
+population,criterion,count,fraction
+all event-repeat units,number of units,4480,1.0
+units with >=1 tail value,number of units,689,0.15379464285714287
+units with >=1 tail value,CA-URC reduces combined tail MAE,648,0.9404934687953556
+units with >=1 tail value,CA-URC does not reduce combined tail MAE,41,0.059506531204644414
+units with >=1 tail value,at least one severe tail underprediction remains,495,0.7184325108853411
+all event-repeat units,non-tail MAE increases,2554,0.5700892857142857
+all event-repeat units,non-tail MAE increases by >0.02 log10 units,645,0.14397321428571427

@@ -1,0 +1,1 @@
+{"date":"2026-10-08","python":"3.11.5","command":"python -m pytest test_physical_diagnostics.py test_snapshot_preprocessing.py test_snapshot_training.py -q","exit_code":0,"passed":65,"reported_seconds":26.20,"scope":"Existing synthetic tests; no complete training or full waveform regeneration."}

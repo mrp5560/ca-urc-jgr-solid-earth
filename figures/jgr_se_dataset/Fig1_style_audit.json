@@ -1,0 +1,18 @@
+{
+  "width_mm": 183.0,
+  "height_mm": 155.0,
+  "font_sizes_pt": {
+    "body": 8.5,
+    "title": 9.2,
+    "axis": 8.6,
+    "tick": 8.0,
+    "legend": 8.0,
+    "annotation": 8.0,
+    "panel": 11.0
+  },
+  "output_stem": "Fig1_dataset_and_causal_protocol",
+  "visible_eligibility_term": "Snapshot-eligible",
+  "legacy_source_data_key_preserved": "causal_eligible",
+  "inset_or_binned_trend_displayed": false,
+  "synthetic_demo": false
+}

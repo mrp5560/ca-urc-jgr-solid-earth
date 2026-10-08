@@ -1,0 +1,28 @@
+{
+  "config_sha256": "6010baaee4c57b5930ac32ab68419c7cd5fe4f0c3023e8c4d7fdb7bcc7567bc0",
+  "environment": {
+    "h5py": "3.14.0",
+    "numpy": "2.4.6",
+    "obspy": "1.4.2",
+    "pandas": "3.0.5",
+    "python": "3.11.5 (tags/v3.11.5:cce6ba9, Aug 24 2023, 14:38:34) [MSC v.1936 64 bit (AMD64)]",
+    "scipy": "1.17.1"
+  },
+  "events_manifest": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+  "events_manifest_sha256": "a630b226ee957333717191fa44d76dd7515855fb66f5669e56620399c2a7059e",
+  "legacy_h5_root": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+  "raw_root": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\raw_m3_2010_2025",
+  "schema_version": "snapshot_available_acceleration_v1",
+  "scope": "prefix-only fixed-snapshot input preprocessing; not end-to-end real-time validation",
+  "script_sha256": "d1576cbfb5d8cc805bc1ba99d3b149c7b283fa74cbd9f4d4fe1a2736d2e34611",
+  "selected_events": 1620,
+  "settings": {
+    "audit_stations_per_event": 2,
+    "high_hz": 20.0,
+    "input_pre_sec": 2.0,
+    "low_hz": 0.1,
+    "sampling_rate": 50.0,
+    "t0_sec": 5.0
+  },
+  "splits_filter": ""
+}

@@ -1,0 +1,61 @@
+{
+  "validation_date": "2026-10-08",
+  "tool": "tools/download_data.py",
+  "scope": "Standard-library local ZIP fixtures; no GitHub mutation or live release download. Real release archive verification is tracked by the publication workflow.",
+  "checks": [
+    {
+      "check": "local download and archive SHA-256 verification",
+      "status": "passed"
+    },
+    {
+      "check": "extracted file size and SHA-256 verification",
+      "status": "passed"
+    },
+    {
+      "check": "parent traversal, absolute paths, drive paths and backslash rejection",
+      "status": "passed"
+    },
+    {
+      "check": "path-traversal ZIP rejected without writing outside destination",
+      "status": "passed"
+    },
+    {
+      "check": "archive SHA-256 mismatch rejected without finalizing download",
+      "status": "passed"
+    },
+    {
+      "check": "member SHA-256 mismatch rejected and partial member removed",
+      "status": "passed"
+    },
+    {
+      "check": "corrupt ZIP payload CRC rejected without finalizing member",
+      "status": "passed"
+    },
+    {
+      "check": "duplicate ZIP member rejected",
+      "status": "passed"
+    },
+    {
+      "check": "ZIP symlink member rejected",
+      "status": "passed"
+    },
+    {
+      "check": "dataset all CLI flow downloads, extracts, verifies and removes cached ZIP",
+      "status": "passed"
+    },
+    {
+      "check": "check-only succeeds for intact dataset",
+      "status": "passed"
+    },
+    {
+      "check": "check-only fails for missing data without changing filesystem",
+      "status": "passed"
+    },
+    {
+      "check": "all temporary fixture files removed",
+      "status": "passed"
+    }
+  ],
+  "result": "passed",
+  "check_count": 13
+}

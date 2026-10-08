@@ -1,0 +1,5 @@
+caliper_km,comparison_type,group_or_model,quantity,population,metric,n_events,point_delta,ci_lower,ci_upper,ci_excludes_zero,two_sided_bootstrap_sign_p,bootstrap_repetitions,bootstrap_unit
+20.0,unseen_minus_seen,cross_attention_base,pga,overall,mae,195,0.0487699723284639,0.0339105302970969,0.0637635503256005,True,0.0001999800019998,10000,event
+20.0,unseen_minus_seen,cross_attention_base,pgv,overall,mae,195,0.0157719995069084,0.0034093836862548,0.0281429077100214,True,0.0133986601339866,10000,event
+20.0,unseen_minus_seen,ca_urc,pga,overall,mae,195,0.0539254475123872,0.0390399477145193,0.0685705601929637,True,0.0001999800019998,10000,event
+20.0,unseen_minus_seen,ca_urc,pgv,overall,mae,195,0.0228361333261626,0.0110778883891865,0.0351568567327016,True,0.0005999400059994,10000,event

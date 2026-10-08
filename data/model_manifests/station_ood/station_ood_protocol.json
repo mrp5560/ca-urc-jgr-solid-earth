@@ -1,0 +1,20 @@
+{
+  "manifest": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+  "split_column": "split_grouped",
+  "train_label": "train",
+  "validation_label": "validation",
+  "test_label": "test",
+  "t0_sec": 5.0,
+  "input_stations": 5,
+  "train_target_stations": 10,
+  "requested_holdout_fraction": 0.2,
+  "actual_holdout_fraction": 0.19910514541387025,
+  "n_station_ids": 447,
+  "n_seen_station_ids": 358,
+  "n_ood_station_ids": 89,
+  "station_assignment_rule": "exact fraction by deterministic SHA256 hash ranking; assignment uses station_id and seed only",
+  "seed": 20260713,
+  "min_ood_targets_test": 3,
+  "min_seen_targets_test": 10,
+  "ground_motion_labels_used_for_split": false
+}

@@ -1,0 +1,41 @@
+{
+  "ablation_prediction_path": "/mnt/\u4e16\u754c\u6a21\u578b/runs/cadrg_gate_ablation_A3_A5/locked_test_ablation_predictions.csv",
+  "baseline_prediction_path": "/mnt/\u4e16\u754c\u6a21\u578b/runs/final_strong_baselines_reuse_locked/final_strong_baseline_reused_locked_predictions.csv",
+  "ablation_rows": 44800,
+  "baseline_rows": 44800,
+  "paired_rows": 44800,
+  "exact_row_pairing": true,
+  "max_abs_truth_diff_pga": 8.881784197001252e-16,
+  "max_abs_cross_attention_diff_pga": 8.881784197001252e-16,
+  "max_abs_truth_diff_pgv": 8.881784197001252e-16,
+  "max_abs_cross_attention_diff_pgv": 8.881784197001252e-16,
+  "final_candidate_name": "CA-URC",
+  "final_candidate_internal_column": "A4_under_only",
+  "grouped_validation_selected_epoch": 3,
+  "grouped_validation_selected_gamma": 5.0,
+  "n_events": 224,
+  "n_sequence_groups": 22,
+  "largest_sequence_events": 50,
+  "comparisons": [
+    {
+      "candidate": "ca_urc",
+      "reference": "cross_attention"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "graph"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "tail_weighted_attention"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "old_power_gate"
+    },
+    {
+      "candidate": "ca_urc",
+      "reference": "ca_drg"
+    }
+  ]
+}

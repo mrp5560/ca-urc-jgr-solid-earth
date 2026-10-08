@@ -1,0 +1,11 @@
+{
+  "variant": "S2_no_target_cross_attention",
+  "best_epoch": 47,
+  "best_validation_score": 0.3112698402621704,
+  "validation_mae_pga": 0.3306054517170849,
+  "validation_mae_pgv": 0.2919342288072559,
+  "parameter_count": 239874,
+  "training_seconds": 6914.668402671814,
+  "test_accessed_during_selection": false,
+  "checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/network_structure_ablation_S1_S4/S2_no_target_cross_attention/best_model.pt"
+}

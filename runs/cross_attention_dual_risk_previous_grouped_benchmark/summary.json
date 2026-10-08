@@ -1,0 +1,22 @@
+{
+  "model": "Cross-Attention Dual-Risk Power Gate",
+  "selected_checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/cross_attention_dual_risk_joint_selection/selected_dual_risk_head.pt",
+  "selection_json": "/mnt/\u4e16\u754c\u6a21\u578b/runs/cross_attention_dual_risk_joint_selection/selected_epoch_gamma.json",
+  "selected_epoch": 9,
+  "selected_gamma": 10.0,
+  "manifest": "/mnt/\u4e16\u754c\u6a21\u578b/data/model_manifests/scenario_t0_5s_k5_linux.csv",
+  "split_column": "split_grouped",
+  "split_label": "test",
+  "repeats": 20,
+  "seed": 20260713,
+  "model_selection_performed_here": false,
+  "benchmark_status": "previously inspected retrospective fixed benchmark",
+  "previous_test_informed_model_design": true,
+  "metric_aggregation": "targets -> repeats -> events",
+  "n_target_rows": 44800,
+  "n_events": 224,
+  "thresholds": {
+    "pga": -2.011172294616699,
+    "pgv": -3.3072495460510254
+  }
+}

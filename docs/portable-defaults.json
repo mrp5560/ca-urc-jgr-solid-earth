@@ -1,0 +1,296 @@
+[
+  {
+    "file": "23_plot_wavecast_style_spatial_cases.py",
+    "line": 244,
+    "old": "runs\\locked_power_gated_test_gamma3\\locked_test_predictions.csv",
+    "new": "runs/locked_power_gated_test_gamma3/locked_test_predictions.csv"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases.py",
+    "line": 245,
+    "old": "data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+    "new": "data/scedc/model_manifests/scenario_t0_5s_k5.csv"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases.py",
+    "line": 246,
+    "old": "runs\\tail_risk_gated_dual_head_t0_5s_k5\\best_overall.pt",
+    "new": "runs/tail_risk_gated_dual_head_t0_5s_k5/best_overall.pt"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases.py",
+    "line": 247,
+    "old": "runs\\tail_gated_compromise_t0_5s_k5\\tail_thresholds_q0.90_t0_5s.json",
+    "new": "runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases.py",
+    "line": 256,
+    "old": "figures\\wavecast_style_cases",
+    "new": "figures/wavecast_style_cases"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases_fixed.py",
+    "line": 246,
+    "old": "runs\\locked_power_gated_test_gamma3\\locked_test_predictions.csv",
+    "new": "runs/locked_power_gated_test_gamma3/locked_test_predictions.csv"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases_fixed.py",
+    "line": 247,
+    "old": "data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+    "new": "data/scedc/model_manifests/scenario_t0_5s_k5.csv"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases_fixed.py",
+    "line": 248,
+    "old": "runs\\tail_risk_gated_dual_head_t0_5s_k5\\best_overall.pt",
+    "new": "runs/tail_risk_gated_dual_head_t0_5s_k5/best_overall.pt"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases_fixed.py",
+    "line": 249,
+    "old": "runs\\tail_gated_compromise_t0_5s_k5\\tail_thresholds_q0.90_t0_5s.json",
+    "new": "runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json"
+  },
+  {
+    "file": "23_plot_wavecast_style_spatial_cases_fixed.py",
+    "line": 258,
+    "old": "figures\\wavecast_style_cases",
+    "new": "figures/wavecast_style_cases"
+  },
+  {
+    "file": "36_plot_section_4_12_1_chronological_generalization_fixed.py",
+    "line": 319,
+    "old": "runs\\time_clean_locked_test_2021_2024_gamma5p5\\model_metrics_summary.csv",
+    "new": "runs/time_clean_locked_test_2021_2024_gamma5p5/model_metrics_summary.csv"
+  },
+  {
+    "file": "36_plot_section_4_12_1_chronological_generalization_fixed.py",
+    "line": 326,
+    "old": "runs\\time_clean_locked_test_2021_2024_gamma5p5\\paired_bootstrap_deltas.csv",
+    "new": "runs/time_clean_locked_test_2021_2024_gamma5p5/paired_bootstrap_deltas.csv"
+  },
+  {
+    "file": "36_plot_section_4_12_1_chronological_generalization_fixed.py",
+    "line": 332,
+    "old": "figures\\section_4_12_1",
+    "new": "figures/section_4_12_1"
+  },
+  {
+    "file": "37_plot_section_4_12_2_ridgecrest_ood.py",
+    "line": 830,
+    "old": "runs\\time_clean_ridgecrest_ood_gamma5p5\\model_metrics_summary.csv",
+    "new": "runs/time_clean_ridgecrest_ood_gamma5p5/model_metrics_summary.csv"
+  },
+  {
+    "file": "37_plot_section_4_12_2_ridgecrest_ood.py",
+    "line": 838,
+    "old": "runs\\time_clean_ridgecrest_ood_gamma5p5\\paired_bootstrap_deltas.csv",
+    "new": "runs/time_clean_ridgecrest_ood_gamma5p5/paired_bootstrap_deltas.csv"
+  },
+  {
+    "file": "37_plot_section_4_12_2_ridgecrest_ood.py",
+    "line": 846,
+    "old": "figures\\section_4_12_2",
+    "new": "figures/section_4_12_2"
+  },
+  {
+    "file": "38_phase1_canonical_metrics.py",
+    "line": 212,
+    "old": "runs\\locked_power_gated_test_gamma3\\locked_test_predictions.csv",
+    "new": "runs/locked_power_gated_test_gamma3/locked_test_predictions.csv"
+  },
+  {
+    "file": "38_phase1_canonical_metrics.py",
+    "line": 218,
+    "old": "runs\\phase1_canonical_metric_audit",
+    "new": "runs/phase1_canonical_metric_audit"
+  },
+  {
+    "file": "39_phase1_tail_threshold_audit.py",
+    "line": 332,
+    "old": "data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+    "new": "data/scedc/model_manifests/scenario_t0_5s_k5.csv"
+  },
+  {
+    "file": "39_phase1_tail_threshold_audit.py",
+    "line": 350,
+    "old": "runs\\tail_gated_compromise_t0_5s_k5\\tail_thresholds_q0.90_t0_5s.json",
+    "new": "runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json"
+  },
+  {
+    "file": "39_phase1_tail_threshold_audit.py",
+    "line": 356,
+    "old": "runs\\phase1_tail_threshold_audit",
+    "new": "runs/phase1_tail_threshold_audit"
+  },
+  {
+    "file": "40_phase1_final_mean_pooling_ablation_suite.py",
+    "line": 1017,
+    "old": "data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+    "new": "data/scedc/model_manifests/scenario_t0_5s_k5.csv"
+  },
+  {
+    "file": "40_phase1_final_mean_pooling_ablation_suite.py",
+    "line": 1057,
+    "old": "runs\\phase1_final_mean_pooling_ablation",
+    "new": "runs/phase1_final_mean_pooling_ablation"
+  },
+  {
+    "file": "Fig1_JGR_SE_dataset_distribution.py",
+    "line": 1530,
+    "old": "F:/数据集/世界模型/basemap/ETOPO_2022_surface.tif",
+    "new": "auto"
+  },
+  {
+    "file": "Fig1_NC_dataset_distribution_final.py",
+    "line": 1537,
+    "old": "F:/数据集\\世界模型/basemap/ETOPO_2022_surface.tif",
+    "new": "auto"
+  },
+  {
+    "file": "Fig1_NC_dataset_distribution_v2.py",
+    "line": 1463,
+    "old": "F:/数据集\\世界模型/basemap/ETOPO_2022_surface.tif",
+    "new": "auto"
+  },
+  {
+    "file": "plot_dataset_distribution_topjournal.py",
+    "line": 363,
+    "old": "data\\scedc\\full_preprocessing_events.csv",
+    "new": "data/scedc/full_preprocessing_events.csv"
+  },
+  {
+    "file": "plot_dataset_distribution_topjournal.py",
+    "line": 367,
+    "old": "data\\scedc\\model_manifests\\scenario_t0_5s_k5.csv",
+    "new": "data/scedc/model_manifests/scenario_t0_5s_k5.csv"
+  },
+  {
+    "file": "plot_dataset_distribution_topjournal.py",
+    "line": 371,
+    "old": "figures\\section_2_dataset",
+    "new": "figures/section_2_dataset"
+  },
+  {
+    "file": "画图/24_plot_section_4_1_causal_baselines.py",
+    "line": 170,
+    "old": "figures\\section_4_1",
+    "new": "figures/section_4_1"
+  },
+  {
+    "file": "画图/32_plot_section_4_11_spatial_case_studies_final.py",
+    "line": 1676,
+    "old": "runs\\locked_power_gated_test_gamma3\\locked_test_predictions.csv",
+    "new": "runs/locked_power_gated_test_gamma3/locked_test_predictions.csv"
+  },
+  {
+    "file": "画图/32_plot_section_4_11_spatial_case_studies_final.py",
+    "line": 1692,
+    "old": "runs\\tail_risk_gated_dual_head_t0_5s_k5\\best_overall.pt",
+    "new": "runs/tail_risk_gated_dual_head_t0_5s_k5/best_overall.pt"
+  },
+  {
+    "file": "画图/32_plot_section_4_11_spatial_case_studies_final.py",
+    "line": 1700,
+    "old": "runs\\tail_gated_compromise_t0_5s_k5\\tail_thresholds_q0.90_t0_5s.json",
+    "new": "runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json"
+  },
+  {
+    "file": "画图/32_plot_section_4_11_spatial_case_studies_final.py",
+    "line": 1785,
+    "old": "figures\\section_4_11",
+    "new": "figures/section_4_11"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_CAURC_final.py",
+    "line": 2201,
+    "old": "F:/数据集/世界模型/causal_seisfield_data_scripts/causal_seisfield_data_scripts/data/scedc/processed_full_v4/events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_CAURC_M43_highmag.py",
+    "line": 2506,
+    "old": "F:/数据集/世界模型/causal_seisfield_data_scripts/causal_seisfield_data_scripts/data/scedc/processed_full_v4/events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_CAURC_M43_highmag_final.py",
+    "line": 2559,
+    "old": "F:/数据集/世界模型/causal_seisfield_data_scripts/causal_seisfield_data_scripts/data/scedc/processed_full_v4/events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_CAURC_M43_highmag_hull.py",
+    "line": 2676,
+    "old": "F:/数据集/世界模型/causal_seisfield_data_scripts/causal_seisfield_data_scripts/data/scedc/processed_full_v4/events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_submission.py",
+    "line": 1687,
+    "old": "runs\\locked_power_gated_test_gamma3\\locked_test_predictions.csv",
+    "new": "runs/locked_power_gated_test_gamma3/locked_test_predictions.csv"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_submission.py",
+    "line": 1703,
+    "old": "runs\\tail_risk_gated_dual_head_t0_5s_k5\\best_overall.pt",
+    "new": "runs/tail_risk_gated_dual_head_t0_5s_k5/best_overall.pt"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_submission.py",
+    "line": 1711,
+    "old": "runs\\tail_gated_compromise_t0_5s_k5\\tail_thresholds_q0.90_t0_5s.json",
+    "new": "runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json"
+  },
+  {
+    "file": "画图/33_plot_section_4_11_spatial_case_studies_submission.py",
+    "line": 1796,
+    "old": "figures\\section_4_11",
+    "new": "figures/section_4_11"
+  },
+  {
+    "file": "画图/Fig7_JGR_SE_spatial_case_studies.py",
+    "line": 2078,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/Fig7_JGR_SE_spatial_case_studies_layout_refined.py",
+    "line": 2151,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/Fig8_NC_spatial_case_studies_fixed.py",
+    "line": 1773,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/Fig8_NC_spatial_case_studies_fixed_v2(1).py",
+    "line": 1777,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/Fig8_NC_spatial_case_studies_fixed_v3.py",
+    "line": 1796,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/Fig8_NC_spatial_case_studies_fixed_v4.py",
+    "line": 1946,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  },
+  {
+    "file": "画图/Fig8_NC_spatial_case_studies_NC_optimized.py",
+    "line": 2027,
+    "old": "F:\\数据集\\世界模型\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\data\\scedc\\processed_full_v4\\events",
+    "new": "data/scedc/processed_full_v4/events"
+  }
+]

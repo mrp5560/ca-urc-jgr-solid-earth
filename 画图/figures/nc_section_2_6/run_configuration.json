@@ -1,0 +1,50 @@
+{
+  "arguments": {
+    "verified_summary": false,
+    "grouped_bootstrap": "runs/caurc_sequence_aware_bootstrap/hierarchical_bootstrap_summary.csv",
+    "chronological_bootstrap": "runs/caurc_chronological_2021_2024/paired_event_bootstrap_2021_2024.csv",
+    "station_deltas": "runs/caurc_station_ood_matched_geometry/caurc_minus_base_matched_by_role.csv",
+    "station_bootstrap": "runs/caurc_station_ood_matched_geometry/matched_geometry_event_bootstrap.csv",
+    "ridgecrest_bootstrap": "runs/caurc_ridgecrest_ood/paired_event_bootstrap_ridgecrest.csv",
+    "caliper_km": 20.0,
+    "allow_different_run": false,
+    "dpi": 600,
+    "out_dir": "figures/nc_section_2_6"
+  },
+  "inputs": {
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_sequence_aware_bootstrap\\hierarchical_bootstrap_summary.csv": {
+      "sha256": "54fb8d82f3cb8770fbc2ef862e4e0d840bac420980be517ab1b2a1b58648408e",
+      "bytes": 24476
+    },
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_chronological_2021_2024\\paired_event_bootstrap_2021_2024.csv": {
+      "sha256": "1757f2c5a4b48219b99f014be59f172a2b29c808f63dd5724fed3fd6f9a86e42",
+      "bytes": 3579
+    },
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_ridgecrest_ood\\paired_event_bootstrap_ridgecrest.csv": {
+      "sha256": "5ebfaa75e135340c4b344129ae95215c9cd0857645ca42dcccd86cfed68e7915",
+      "bytes": 4451
+    },
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_station_ood_matched_geometry\\caurc_minus_base_matched_by_role.csv": {
+      "sha256": "9947a7cacd79348702d8198635f747990740313ea6ff6c117861356a63699fb6",
+      "bytes": 13396
+    },
+    "F:\\\u6570\u636e\u96c6\\\u4e16\u754c\u6a21\u578b\\causal_seisfield_data_scripts\\causal_seisfield_data_scripts\\\u753b\u56fe\\runs\\caurc_station_ood_matched_geometry\\matched_geometry_event_bootstrap.csv": {
+      "sha256": "a5abeb683c8041dab3764d76e67f2b991688b65952f649506a4e2e67ed9147a5",
+      "bytes": 32229
+    },
+    "input_mode": "original_project_summary_csvs"
+  },
+  "resampling_units": {
+    "grouped": "hierarchical_sequence_event",
+    "chronological": "event",
+    "unseen_station": "event",
+    "ridgecrest": "event_within_single_heldout_sequence"
+  },
+  "training_performed": false,
+  "model_selection_performed": false,
+  "bootstrap_rerun": false,
+  "new_raw_target_pairing_audit": false,
+  "audit_scope": "Saved estimate/count/schema consistency only",
+  "relative_reduction_CI": "Not computed from fixed reference denominators",
+  "unseen_tail_row_counts": "Not in the inspected log; deliberately left missing"
+}

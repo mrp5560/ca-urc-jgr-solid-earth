@@ -1,0 +1,47 @@
+{
+  "predictions": "runs\\caurc_station_ood\\repeated_station_ood_predictions.csv",
+  "calipers_km": [
+    10.0,
+    20.0,
+    30.0
+  ],
+  "primary_caliper_km": 20.0,
+  "bootstrap_repetitions": 10000,
+  "confidence_level": 0.95,
+  "seed": 20260713,
+  "out_dir": "runs\\caurc_station_ood_matched_geometry",
+  "protocol_audit": {
+    "rows": 23400,
+    "events": 195,
+    "event_repeat_groups": 3900,
+    "seen_rows": 11700,
+    "unseen_rows": 11700,
+    "unique_seen_stations": 264,
+    "unique_unseen_stations": 65,
+    "bad_same_input_station_groups": 0,
+    "bad_equal_role_budget_groups": 0,
+    "seen_targets_per_group_unique": [
+      3
+    ],
+    "unseen_targets_per_group_unique": [
+      3
+    ]
+  },
+  "matching_objective": "maximize retained pairs, then minimize total absolute nearest-input-distance difference",
+  "exact_p_wave_state_matching": true,
+  "matching_features": [
+    "target_p_wave_reached",
+    "nearest_input_distance_km"
+  ],
+  "matching_excludes": [
+    "true PGA/PGV",
+    "predicted PGA/PGV",
+    "prediction error",
+    "tail labels",
+    "underprediction labels"
+  ],
+  "metric_aggregation": "matched targets/pairs -> repeats -> events",
+  "bootstrap_unit": "event",
+  "training_performed": false,
+  "model_selection_performed": false
+}

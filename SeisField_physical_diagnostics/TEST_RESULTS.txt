@@ -1,0 +1,28 @@
+test_configuration_change_refused (test_physical_diagnostics.IntegrationTests.test_configuration_change_refused) ... ok
+test_failed_draw_alignment (test_physical_diagnostics.IntegrationTests.test_failed_draw_alignment) ... ok
+test_full_audit_then_analysis (test_physical_diagnostics.IntegrationTests.test_full_audit_then_analysis) ... ok
+test_global_metric_reconciliation (test_physical_diagnostics.IntegrationTests.test_global_metric_reconciliation) ... ok
+test_label_mismatch (test_physical_diagnostics.IntegrationTests.test_label_mismatch) ... ok
+test_missing_predictions (test_physical_diagnostics.IntegrationTests.test_missing_predictions) ... ok
+test_not_inside_training_output (test_physical_diagnostics.IntegrationTests.test_not_inside_training_output) ... ok
+test_source_hash_guard (test_physical_diagnostics.IntegrationTests.test_source_hash_guard) ... ok
+test_bootstrap_constant (test_physical_diagnostics.UnitTests.test_bootstrap_constant) ... ok
+test_distance_local_source_convention (test_physical_diagnostics.UnitTests.test_distance_local_source_convention) ... ok
+test_empty_tail_not_zero (test_physical_diagnostics.UnitTests.test_empty_tail_not_zero) ... ok
+test_event_balancing (test_physical_diagnostics.UnitTests.test_event_balancing) ... ok
+test_indices_preserve_unsorted (test_physical_diagnostics.UnitTests.test_indices_preserve_unsorted) ... ok
+test_indices_reject_duplicate (test_physical_diagnostics.UnitTests.test_indices_reject_duplicate) ... ok
+test_indices_reject_float (test_physical_diagnostics.UnitTests.test_indices_reject_float) ... ok
+test_indices_reject_missing (test_physical_diagnostics.UnitTests.test_indices_reject_missing) ... ok
+test_invalid_pair (test_physical_diagnostics.UnitTests.test_invalid_pair) ... ok
+test_missing_s_not_assumed_before (test_physical_diagnostics.UnitTests.test_missing_s_not_assumed_before) ... ok
+test_phase_boundaries (test_physical_diagnostics.UnitTests.test_phase_boundaries) ... ok
+test_seed (test_physical_diagnostics.UnitTests.test_seed) ... ok
+test_sparse_suppression (test_physical_diagnostics.UnitTests.test_sparse_suppression) ... ok
+test_strict_bool (test_physical_diagnostics.UnitTests.test_strict_bool) ... ok
+test_strict_bool_reject (test_physical_diagnostics.UnitTests.test_strict_bool_reject) ... ok
+
+----------------------------------------------------------------------
+Ran 23 tests in 8.763s
+
+OK

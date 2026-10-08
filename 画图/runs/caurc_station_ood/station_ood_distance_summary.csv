@@ -1,0 +1,3 @@
+target_role,n_rows,n_events,n_unique_stations,median_nearest_input_distance_km,p25_nearest_input_distance_km,p75_nearest_input_distance_km,fraction_p_wave_reached
+seen_target,11700,195,264,105.09991455078125,74.38548278808594,143.45799255371094,0.02188034188034188
+unseen_station_target,11700,195,65,89.40471649169922,54.187889099121094,137.37881469726562,0.05931623931623932

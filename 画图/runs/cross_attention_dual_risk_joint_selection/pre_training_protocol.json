@@ -1,0 +1,66 @@
+{
+  "baseline_module": "45_phase2_strong_baseline_suite.py",
+  "manifest": "data/model_manifests/scenario_t0_5s_k5_linux.csv",
+  "h5_root": "data/processed_full_v4/events",
+  "split_column": "split_grouped",
+  "train_label": "train",
+  "validation_label": "validation",
+  "base_checkpoint": "/mnt/\u4e16\u754c\u6a21\u578b/runs/final_strong_baselines_reuse_locked/cross_attention/best_model.pt",
+  "threshold_json": "runs/tail_gated_compromise_t0_5s_k5/tail_thresholds_q0.90_t0_5s.json",
+  "t0_sec": 5,
+  "input_stations": 5,
+  "target_stations": 10,
+  "input_pre_sec": 2.0,
+  "prevalence_repeats": 3,
+  "training_validation_repeats": 3,
+  "selection_validation_repeats": 20,
+  "hidden_dim": 128,
+  "attention_heads": 4,
+  "risk_hidden": 64,
+  "maximum_correction": 1.5,
+  "epochs": 40,
+  "batch_size": 8,
+  "head_eval_batch_size": 8192,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0001,
+  "lambda_tail_classification": 0.25,
+  "lambda_under_classification": 0.25,
+  "lambda_regression": 1.0,
+  "risk_regression_weight": 2.0,
+  "lambda_directional": 0.5,
+  "lambda_leakage": 0.05,
+  "max_positive_weight": 9.0,
+  "powers": "1,1.5,2,2.5,3,4,5,6,7,8,10,12,15,20",
+  "overall_budget": 0.005,
+  "non_tail_budget": 0.003,
+  "bias_limit": 0.05,
+  "seed": 20260713,
+  "num_workers": 0,
+  "device": "cuda",
+  "out_dir": "runs/cross_attention_dual_risk_joint_selection",
+  "resolved_device": "cuda",
+  "base_checkpoint_epoch": 42,
+  "tail_thresholds": {
+    "pga": -2.011172294616699,
+    "pgv": -3.3072495460510254
+  },
+  "training_tail_prevalence": {
+    "pga": 0.07460050462573592,
+    "pgv": 0.080067283431455
+  },
+  "training_under05_prevalence": {
+    "pga": 0.14031398934679,
+    "pgv": 0.11858704793944491
+  },
+  "tail_pos_weight": {
+    "pga": 9.0,
+    "pgv": 9.0
+  },
+  "under_pos_weight": {
+    "pga": 6.126873126873128,
+    "pgv": 7.432624113475177
+  },
+  "formula": "y_final = y_cross_attention + p_under * p_tail^gamma * Delta",
+  "selection_uses_test": false,
+  "old_grouped_test_is_not_new_final_test": true
+}
