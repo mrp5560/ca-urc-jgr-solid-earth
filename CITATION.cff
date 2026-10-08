@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+message: >-
+  Please cite this software repository and the associated manuscript when
+  available. The author identifier below is the verified repository account,
+  not a verification of the manuscript's personal-author list. Cite SCEDC
+  and the contributing seismic networks separately for source observations.
+type: software
+title: "Causal-SeisField and CA-URC: Research Code and Data"
+authors:
+  - name: "mrp5560"
+    website: "https://github.com/mrp5560"
+repository-code: "https://github.com/mrp5560/ca-urc-jgr-solid-earth"
+url: "https://github.com/mrp5560/ca-urc-jgr-solid-earth"
+license: MIT
+keywords:
+  - seismology
+  - ground motion
+  - cross-attention
+  - underprediction risk
