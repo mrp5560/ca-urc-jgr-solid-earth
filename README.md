@@ -153,7 +153,7 @@ All 163 copied Python sources passed syntax parsing with Python 3.11.5. The thre
 
 ## Citation and licenses
 
-Code uses the [MIT license](LICENSE). Author-created derived research data and numerical outputs use [CC BY 4.0](DATA_LICENSE.md), with the stated third-party exclusions. Cite the repository version, associated manuscript when available, and original data providers. `CITATION.cff` uses the verified repository account, not an inferred manuscript author list. No publication or archive DOI is invented.
+Code uses the [MIT license](LICENSE). Author-created derived research data and numerical outputs use [CC BY 4.0](DATA_LICENSE.md), with the stated third-party exclusions. Cite the repository version, associated manuscript when available, and original data providers. The software author and dataset curator is **Runping Ma**. `CITATION.cff` records the confirmed software author; this does not establish the manuscript author list. Software and data should be cited separately. No publication or archive DOI is stated until it has been assigned.
 
 See [SCEDC citation guidance](https://scedc.caltech.edu/about/citation.html). Cite SCEDC [10.7909/C3WD3xH1](https://doi.org/10.7909/C3WD3xH1) and SCSN/CI [10.7914/SN/CI](https://doi.org/10.7914/SN/CI) where applicable; other networks require their own citations. A later DOI archive should identify the specific frozen release.
 

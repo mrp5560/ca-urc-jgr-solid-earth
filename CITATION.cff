@@ -1,17 +1,26 @@
 cff-version: 1.2.0
 message: >-
-  Please cite this software repository and the associated manuscript when
-  available. The author identifier below is the verified repository account,
-  not a verification of the manuscript's personal-author list. Cite SCEDC
-  and the contributing seismic networks separately for source observations.
+  If you use this software, please cite it as below. Cite the associated
+  dataset separately, and cite SCEDC and the contributing seismic networks
+  for source observations. Cite the associated manuscript when available.
 type: software
-title: "Causal-SeisField and CA-URC: Research Code and Data"
+title: "Causal-SeisField and CA-URC"
+version: "1.0.1"
+date-released: 2026-10-10
 authors:
-  - name: "mrp5560"
-    website: "https://github.com/mrp5560"
+  - given-names: "Runping"
+    family-names: "Ma"
 repository-code: "https://github.com/mrp5560/ca-urc-jgr-solid-earth"
 url: "https://github.com/mrp5560/ca-urc-jgr-solid-earth"
 license: MIT
+abstract: >-
+  Research software for retrospective sparse-station ground-motion
+  prediction using a target-conditioned Cross-Attention Base and
+  underprediction-risk correction (CA-URC). Includes data preparation,
+  model training, locked-prediction analysis, and figure scripts. The
+  publication package contains selected data samples and archived results,
+  not the complete full-record training and label dataset. Derived data
+  have a separate CC BY 4.0 license with third-party source exclusions.
 keywords:
   - seismology
   - ground motion
