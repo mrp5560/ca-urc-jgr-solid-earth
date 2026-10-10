@@ -1,3 +1,0 @@
-SYNTHETIC TESTS ONLY - NOT SCIENTIFIC RESULTS
-.....................                                                    [100%]
-21 passed in 5.09s
